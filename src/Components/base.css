@@ -1,0 +1,9 @@
+button{
+  background: none;
+}
+
+body{
+  background-color: #fafafa;
+}
+
+*:focus {outline:none !important}
