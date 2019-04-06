@@ -1,0 +1,1 @@
+{"version":3,"sources":["base.css"],"names":[],"mappings":"AAAA,OACE,eAAiB,CAGnB,KACE,wBAA0B,CAG5B,OAAS,sBAAuB","file":"static/css/main.809bcfdb.css","sourcesContent":["button{\n  background: none;\n}\n\nbody{\n  background-color: #fafafa;\n}\n\n*:focus {outline:none !important}\n\n\n// WEBPACK FOOTER //\n// ./src/base.css"],"sourceRoot":""}
