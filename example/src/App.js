@@ -30,7 +30,7 @@ class App extends Component {
       <div className="App">
         <CenteredColumnContainer>
           <RowSection>
-            <ColumnSection ratio={3}>
+            <ColumnSection ratio={3} sectionMargin={20}>
               <Image imageURL={sequenceLogo} />
               <Text textSize="1" isBold>
                 sequence-ui
