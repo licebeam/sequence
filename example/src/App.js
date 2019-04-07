@@ -2,23 +2,12 @@ import React, { Component } from "react";
 import "./index.css";
 import sequenceLogo from "./images/sequence-ui-logo.gif";
 import {
-  DropDown,
-  Tag,
-  Modal,
-  ImageCircle,
   Image,
   Text,
   Button,
   CenteredColumnContainer,
   RowSection,
-  Card,
-  ColumnSectionWithHeader,
-  ColumnSection,
-  CardWithHeader,
-  Input,
-  RowSectionWithHeader,
-  RowContainer,
-  ColumnContainer
+  ColumnSection
 } from "sequence-ui";
 import About from "./Pages/About";
 import Installation from "./Pages/Installation";

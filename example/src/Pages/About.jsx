@@ -23,10 +23,18 @@ class About extends Component {
   render() {
     return (
       <CenteredColumnContainer>
-        <Text textSize="1" isBold>
-          sequence-ui is a React component library built using
-          styled-components.
-        </Text>
+        <ColumnSectionWithHeader title="Why">
+          <Text textSize="1" isBold>
+            sequence-ui is a React component library built using
+            styled-components.
+          </Text>
+        </ColumnSectionWithHeader>
+        <ColumnSectionWithHeader title="Why" sectionMargin={40}>
+          <Text textSize="1" isBold>
+            sequence-ui is a React component library built using
+            styled-components.
+          </Text>
+        </ColumnSectionWithHeader>
       </CenteredColumnContainer>
     );
   }
