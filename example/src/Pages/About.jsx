@@ -13,8 +13,8 @@ class About extends Component {
     return (
       <ColumnContainer>
         <ColumnSection
-          backgroundColor="blue"
-          textColor="white"
+          backgroundColor="#3A8687"
+          textColor="#fafafa"
           sectionPadding="20"
         >
           <Text textSize="1" isBold>
