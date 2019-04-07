@@ -86,7 +86,7 @@ class App extends Component {
                 </Button>
               </ColumnSection>
             </ColumnSection>
-            <ColumnSection ratio={6} sectionMarginLeft={20}>
+            <ColumnSection ratio={6} sectionMarginLeft={60}>
               <ColumnSection ratio={4} sectionMarginTop={40}>
                 {this.state.page === "about" ? <About /> : null}
                 {this.state.page === "installation" ? <Installation /> : null}
