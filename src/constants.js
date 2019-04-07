@@ -29,7 +29,7 @@ export const colors = {
   //default buttons
   defaultButtonBorder: "#3A8687",
   defaultButtonBackground: "#3A8687",
-  defaultButtonTextColor: "#000",
+  defaultButtonTextColor: "#fafafa",
   defaultButtonHoverColor: "#173E56",
   defaultButtonHoverTextColor: "#fafafa",
   //special colors
