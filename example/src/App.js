@@ -115,9 +115,29 @@ class App extends Component {
             <RowSection>
               <ColumnSection sectionMargin={20}>
                 <Text>Thanks for checking out sequence-ui</Text>
-                <Button noGap>Github</Button>
-                <Button noGap>Npm</Button>
-                <Button noGap>Bundle Phobia</Button>
+                <RowSection>
+                  <a
+                    target="_blank"
+                    className="page-link"
+                    href="https://github.com/licebeam/sequence"
+                  >
+                    Github Repo
+                  </a>
+                  <a
+                    target="_blank"
+                    className="page-link"
+                    href="https://www.npmjs.com/package/sequence-ui"
+                  >
+                    NPM
+                  </a>
+                  <a
+                    target="_blank"
+                    className="page-link"
+                    href="https://bundlephobia.com/result?p=sequence-ui@0.1.3"
+                  >
+                    Bundle Phobia
+                  </a>
+                </RowSection>
               </ColumnSection>
             </RowSection>
           </CenteredColumnContainer>

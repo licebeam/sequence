@@ -1,9 +1,31 @@
-button{
+button {
   background: none;
 }
 
-body{
+body {
   background-color: #fafafa;
 }
 
-*:focus {outline:none !important}
+.page-link {
+  margin: 20px;
+}
+a:link {
+  text-decoration: none;
+  color: green;
+}
+a:visited {
+  text-decoration: none;
+  color: green;
+}
+a:hover {
+  text-decoration: none;
+  color: hotpink;
+}
+a:active {
+  text-decoration: none;
+  color: blue;
+}
+
+*:focus {
+  outline: none !important;
+}
