@@ -32,7 +32,7 @@ class App extends Component {
       <div className="App">
         <CenteredColumnContainer>
           <RowSection>
-            <ColumnSection ratio={1}>
+            <ColumnSection ratio={3}>
               <Image imageURL={sequenceLogo} />
               <Text textSize="1" isBold>
                 sequence-ui
@@ -56,10 +56,13 @@ class App extends Component {
                 <Button noGap>Modals</Button>
               </ColumnSection>
             </ColumnSection>
-            <ColumnSection ratio={3}>
-              <Button noGap>Github</Button>
-              <Button noGap>Npm</Button>
-              <Button noGap>Bundle Phobia</Button>
+            <ColumnSection ratio={1} />
+            <ColumnSection ratio={6}>
+              <ColumnSection ratio={4}>
+                <Button noGap>Github</Button>
+                <Button noGap>Npm</Button>
+                <Button noGap>Bundle Phobia</Button>
+              </ColumnSection>
               <ColumnSection ratio={4}>
                 <Text textSize="1" isBold>
                   sequence-ui is a React component library built using
