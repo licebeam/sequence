@@ -6,6 +6,8 @@ import "./base.css";
 const TextContainer = styled.div`
   display: flex;
   flex-direction: row;
+  align-self: center;
+  justify-content: center;
   flex: ${props => props.ratio || "1"};
   height: 100%;
   overflow: auto;
@@ -33,6 +35,7 @@ class Text extends Component {
         sectionMargin={sectionMargin}
         ratio={ratio}
         textColor={textColor}
+        textSize={textSize}
       >
         {this.props.children}
       </TextContainer>

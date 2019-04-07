@@ -7,6 +7,7 @@ import {
   Modal,
   ImageCircle,
   Image,
+  Text,
   Button,
   CenteredColumnContainer,
   RowSection,
@@ -32,7 +33,7 @@ class App extends Component {
         <CenteredColumnContainer>
           <RowSection backgroundColor="red">
             <Image imageURL={sequenceLogo} />
-            <h1>Sequence-ui</h1>
+            <Text>Sequence-ui</Text>
             <ColumnSection ratio={6} />
           </RowSection>
         </CenteredColumnContainer>
