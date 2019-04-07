@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Switch, Route, Link } from "react-router";
 import "./index.css";
 import sequenceLogo from "./images/sequence-ui-logo.gif";
 import {
@@ -20,6 +21,7 @@ import {
   RowContainer,
   ColumnContainer
 } from "sequence-ui";
+import About from "./Pages/About";
 
 class App extends Component {
   state = { modalOpen: false };
@@ -44,7 +46,9 @@ class App extends Component {
             <ColumnSection ratio={3}>
               <ColumnSection sectionMargin={20}>
                 <Text>Docs</Text>
-                <Button noGap>About</Button>
+                <Link to="/">
+                  <Button noGap>About</Button>
+                </Link>
                 <Button noGap>Installation</Button>
                 <Button noGap>Getting Started</Button>
                 <Text>Primitives</Text>
@@ -64,7 +68,9 @@ class App extends Component {
             <ColumnSection ratio={1} />
             <ColumnSection ratio={6}>
               <ColumnSection ratio={4} sectionMargin={20}>
-                {/* ROUTER GOES HERE */}
+                <Switch>
+                  <Route exact path="/" component={About} />
+                </Switch>
                 <Text textSize="1" isBold>
                   sequence-ui is a React component library built using
                   styled-components.
