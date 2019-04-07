@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { colors } from './Components/constants';
+import { colors } from './components/constants';
 import './index.css';
-import { DropDown, Tag, Modal, ImageCircle, Image, Button, CenteredColumnContainer, RowSection, Card, ColumnSectionWithHeader, ColumnSection, CardWithHeader, Input, RowSectionWithHeader, RowContainer, ColumnContainer } from './Components'
+import { DropDown, Tag, Modal, ImageCircle, Image, Button, CenteredColumnContainer, RowSection, Card, ColumnSectionWithHeader, ColumnSection, CardWithHeader, Input, RowSectionWithHeader, RowContainer, ColumnContainer } from './components'
 
 class App extends Component {
   state = { modalOpen: false }
