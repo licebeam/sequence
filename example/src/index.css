@@ -9,23 +9,23 @@ body {
 /* unvisited link */
 a:link {
   text-decoration: none;
-  color: red;
+  color: darkcyan;
 }
 
 /* visited link */
 a:visited {
   text-decoration: none;
-  color: green;
+  color: darkcyan;
 }
 
 /* mouse over link */
 a:hover {
   text-decoration: none;
-  color: hotpink;
+  color: orangered;
 }
 
 /* selected link */
 a:active {
   text-decoration: none;
-  color: blue;
+  color: darkcyan;
 }

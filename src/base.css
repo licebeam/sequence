@@ -9,21 +9,25 @@ body {
 .page-link {
   margin: 20px;
 }
+
 a:link {
   text-decoration: none;
-  color: green;
+  color: darkcyan;
 }
+
 a:visited {
   text-decoration: none;
-  color: green;
+  color: darkcyan;
 }
+
 a:hover {
   text-decoration: none;
-  color: hotpink;
+  color: orangered;
 }
+
 a:active {
   text-decoration: none;
-  color: blue;
+  color: darkcyan;
 }
 
 *:focus {
