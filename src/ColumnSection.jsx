@@ -9,7 +9,7 @@ const FlexContainer = styled.div`
   flex: ${props => props.ratio || "1"};
   height: 100%;
   overflow: auto;
-  margin: ${props =>
+  margin-top: ${props =>
     props.sectionMargin ? props.sectionMargin + "px" : "0px"};
   background-color: ${props => props.backgroundColor || "inherit"};
   color: ${props => props.textColor || "inherit"};

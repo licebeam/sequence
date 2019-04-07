@@ -37,7 +37,12 @@ class App extends Component {
               <Text textSize="1" isBold>
                 sequence-ui
               </Text>
-              <ColumnSection>
+            </ColumnSection>
+            <ColumnSection ratio={7} />
+          </RowSection>
+          <RowSection>
+            <ColumnSection ratio={3}>
+              <ColumnSection sectionMargin={20}>
                 <Text>Docs</Text>
                 <Button noGap>About</Button>
                 <Button noGap>Installation</Button>
@@ -58,17 +63,20 @@ class App extends Component {
             </ColumnSection>
             <ColumnSection ratio={1} />
             <ColumnSection ratio={6}>
-              <ColumnSection ratio={4}>
-                <Button noGap>Github</Button>
-                <Button noGap>Npm</Button>
-                <Button noGap>Bundle Phobia</Button>
-              </ColumnSection>
-              <ColumnSection ratio={4}>
+              <ColumnSection ratio={4} sectionMargin={20}>
                 <Text textSize="1" isBold>
                   sequence-ui is a React component library built using
                   styled-components.
                 </Text>
               </ColumnSection>
+            </ColumnSection>
+          </RowSection>
+          <RowSection>
+            <ColumnSection sectionMargin={20}>
+              <Text>Thanks for checking out sequence-ui</Text>
+              <Button noGap>Github</Button>
+              <Button noGap>Npm</Button>
+              <Button noGap>Bundle Phobia</Button>
             </ColumnSection>
           </RowSection>
         </CenteredColumnContainer>
