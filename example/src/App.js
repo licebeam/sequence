@@ -64,6 +64,7 @@ class App extends Component {
             <ColumnSection ratio={1} />
             <ColumnSection ratio={6}>
               <ColumnSection ratio={4} sectionMargin={20}>
+                {/* ROUTER GOES HERE */}
                 <Text textSize="1" isBold>
                   sequence-ui is a React component library built using
                   styled-components.
