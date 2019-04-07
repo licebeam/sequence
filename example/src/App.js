@@ -51,43 +51,43 @@ class App extends Component {
               <ColumnSection ratio={3}>
                 <ColumnSection sectionMargin={20}>
                   <Text>Docs</Text>
-                  <Link to="/">
+                  <Link to="/sequence">
                     <Button noGap>About</Button>
                   </Link>
-                  <Link to="/install">
+                  <Link to="/sequence/install">
                     <Button noGap>Installation</Button>
                   </Link>
-                  <Link to="/start">
+                  <Link to="/sequence/start">
                     <Button noGap>Getting Started</Button>
                   </Link>
                   <Text>Primitives</Text>
-                  <Link to="/containers">
+                  <Link to="/sequence/containers">
                     <Button noGap>Containers</Button>
                   </Link>
-                  <Link to="/sections">
+                  <Link to="/sequence/sections">
                     <Button noGap>Sections</Button>
                   </Link>
                   <Text>Basic Elements</Text>
-                  <Link to="/text">
+                  <Link to="/sequence/text">
                     <Button noGap>Text</Button>
                   </Link>
-                  <Link to="/images">
+                  <Link to="/sequence/images">
                     <Button noGap>Images</Button>
                   </Link>
-                  <Link to="/tags">
+                  <Link to="/sequence/tags">
                     <Button noGap>Tags</Button>
                   </Link>
                   <Text>Interactables</Text>
-                  <Link to="/buttons">
+                  <Link to="/sequence/buttons">
                     <Button noGap>Buttons</Button>
                   </Link>
-                  <Link to="/menus">
+                  <Link to="/sequence/menus">
                     <Button noGap>Menus</Button>
                   </Link>
-                  <Link to="/inputs">
+                  <Link to="/sequence/inputs">
                     <Button noGap>Inputs</Button>
                   </Link>
-                  <Link to="/modals">
+                  <Link to="/sequence/modals">
                     <Button noGap>Modals</Button>
                   </Link>
                 </ColumnSection>
@@ -96,18 +96,62 @@ class App extends Component {
               <ColumnSection ratio={6}>
                 <ColumnSection ratio={4} sectionMargin={20}>
                   <Switch>
-                    <Route exact path="/" component={About} />
-                    <Route exact path="/install" component={Installation} />
-                    <Route exact path="/start" component={GettingStarted} />
-                    <Route exact path="/containers" component={Construction} />
-                    <Route exact path="/sections" component={Construction} />
-                    <Route exact path="/text" component={Construction} />
-                    <Route exact path="/images" component={Construction} />
-                    <Route exact path="/tags" component={Construction} />
-                    <Route exact path="/buttons" component={Construction} />
-                    <Route exact path="/menus" component={Construction} />
-                    <Route exact path="/inputs" component={Construction} />
-                    <Route exact path="/modals" component={Construction} />
+                    <Route exact path="/sequence" component={About} />
+                    <Route
+                      exact
+                      path="/sequence/install"
+                      component={Installation}
+                    />
+                    <Route
+                      exact
+                      path="/sequence/start"
+                      component={GettingStarted}
+                    />
+                    <Route
+                      exact
+                      path="/sequence/containers"
+                      component={Construction}
+                    />
+                    <Route
+                      exact
+                      path="/sequence/sections"
+                      component={Construction}
+                    />
+                    <Route
+                      exact
+                      path="/sequence/text"
+                      component={Construction}
+                    />
+                    <Route
+                      exact
+                      path="/sequence/images"
+                      component={Construction}
+                    />
+                    <Route
+                      exact
+                      path="/sequence/tags"
+                      component={Construction}
+                    />
+                    <Route
+                      exact
+                      path="/sequence/buttons"
+                      component={Construction}
+                    />
+                    <Route
+                      exact
+                      path="/sequence/menus"
+                      component={Construction}
+                    />
+                    <Route
+                      exact
+                      path="/sequence/inputs"
+                      component={Construction}
+                    />
+                    <Route
+                      exact
+                      path="/sequence/modals"
+                      component={Construction}
+                    />
                   </Switch>
                 </ColumnSection>
               </ColumnSection>
