@@ -72,16 +72,32 @@ class App extends Component {
                   Tags
                 </Button>
                 <Text>Interactables</Text>
-                <Button onClick={() => this.changePage("buttons")} noGap>
+                <Button
+                  onClick={() => this.changePage("buttons")}
+                  isDisabled
+                  noGap
+                >
                   Buttons
                 </Button>
-                <Button onClick={() => this.changePage("menus")} noGap>
+                <Button
+                  onClick={() => this.changePage("menus")}
+                  isDisabled
+                  noGap
+                >
                   Menus
                 </Button>
-                <Button onClick={() => this.changePage("inputs")} noGap>
+                <Button
+                  onClick={() => this.changePage("inputs")}
+                  isDisabled
+                  noGap
+                >
                   Inputs
                 </Button>
-                <Button onClick={() => this.changePage("modals")} noGap>
+                <Button
+                  onClick={() => this.changePage("modals")}
+                  isDisabled
+                  noGap
+                >
                   Modals
                 </Button>
               </ColumnSection>
