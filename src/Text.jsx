@@ -7,12 +7,9 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-self: center;
-  justify-content: center;
   flex: ${props => props.ratio || "1"};
   height: 100%;
   overflow: auto;
-  align-content: center;
-  justify-content: center;
   font-size: ${props => (props.textSize ? props.textSize + "rem" : "1rem")};
   background-color: ${props => props.backgroundColor || "inherit"};
   color: ${props => props.textColor || "inherit"};

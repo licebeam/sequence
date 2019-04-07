@@ -31,10 +31,10 @@ class App extends Component {
     return (
       <div className="App">
         <CenteredColumnContainer>
-          <RowSection backgroundColor="red">
+          <RowSection>
             <Image imageURL={sequenceLogo} />
-            <Text>Sequence-ui</Text>
-            <ColumnSection ratio={6} />
+            <Text textSize="2">Sequence-ui</Text>
+            <ColumnSection ratio={3} />
           </RowSection>
         </CenteredColumnContainer>
       </div>

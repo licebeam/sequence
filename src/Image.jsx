@@ -9,7 +9,6 @@ const FlexContainer = styled.div`
   overflow: auto;
   margin: 0.2rem;
   align-self: center;
-  flex: 1;
   width: ${props => (props.imageWidth ? props.imageWidth + "px" : "100px")};
   height: ${props => (props.imageHeight ? props.imageHeight + "px" : "100px")};
   .image {
