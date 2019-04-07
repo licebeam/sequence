@@ -19,17 +19,10 @@ import {
   ColumnContainer
 } from "sequence-ui";
 
-class About extends Component {
+class GettingStarted extends Component {
   render() {
-    return (
-      <CenteredColumnContainer>
-        <Text textSize="1" isBold>
-          sequence-ui is a React component library built using
-          styled-components.
-        </Text>
-      </CenteredColumnContainer>
-    );
+    return <CenteredColumnContainer>Getting Started</CenteredColumnContainer>;
   }
 }
 
-export default About;
+export default GettingStarted;

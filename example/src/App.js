@@ -24,6 +24,8 @@ import {
 } from "sequence-ui";
 import About from "./Pages/About";
 import Installation from "./Pages/Installation";
+import GettingStarted from "./Pages/GettingStarted";
+import Construction from "./Pages/Construction";
 
 class App extends Component {
   state = { modalOpen: false };
@@ -96,11 +98,17 @@ class App extends Component {
                   <Switch>
                     <Route exact path="/" component={About} />
                     <Route exact path="/install" component={Installation} />
+                    <Route exact path="/start" component={GettingStarted} />
+                    <Route exact path="/containers" component={Construction} />
+                    <Route exact path="/sections" component={Construction} />
+                    <Route exact path="/text" component={Construction} />
+                    <Route exact path="/images" component={Construction} />
+                    <Route exact path="/tags" component={Construction} />
+                    <Route exact path="/buttons" component={Construction} />
+                    <Route exact path="/menus" component={Construction} />
+                    <Route exact path="/inputs" component={Construction} />
+                    <Route exact path="/modals" component={Construction} />
                   </Switch>
-                  <Text textSize="1" isBold>
-                    sequence-ui is a React component library built using
-                    styled-components.
-                  </Text>
                 </ColumnSection>
               </ColumnSection>
             </RowSection>
