@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactMarkdown from "react-markdown";
+import SyntaxHighlighter from "react-syntax-highlighter";
 import {
   DropDown,
   Tag,
@@ -22,8 +23,7 @@ import {
 
 class About extends Component {
   render() {
-    const markyMark =
-      '```js    <CenteredColumnContainer>\r\n        <Text textSize="1" isBold>\r\n          sequence-ui is a React component library built using\r\n          styled-components.\r\n        </Text>\r\n        <ReactMarkdown source={mark} />\r\n        <ColumnSectionWithHeader title="Why" sectionMargin={40}>\r\n          <Text textSize="1" isBold>\r\n            The goal of sequence-ui is to Modularize components down to\r\n            primitives and basic elements allowing developers to quickly build\r\n            compound components.\r\n          </Text>\r\n        </ColumnSectionWithHeader>\r\n      </CenteredColumnContainer>';
+    const exampleCode = '<Text textSize="1" isBold> My Cool Text </Text>';
     return (
       <CenteredColumnContainer>
         <Text textSize="1" isBold>
@@ -36,8 +36,9 @@ class About extends Component {
             primitives and basic elements allowing developers to quickly build
             compound components.
           </Text>
-
-          <ReactMarkdown source={markyMark} />
+          <SyntaxHighlighter wrapLines={true} language="html">
+            {exampleCode}
+          </SyntaxHighlighter>
         </ColumnSectionWithHeader>
       </CenteredColumnContainer>
     );
