@@ -1,24 +1,9 @@
 import React, { Component } from "react";
-import ReactMarkdown from "react-markdown";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import {
-  DropDown,
-  Tag,
-  Modal,
-  ImageCircle,
-  Image,
   Text,
-  Button,
   CenteredColumnContainer,
-  RowSection,
-  Card,
-  ColumnSectionWithHeader,
-  ColumnSection,
-  CardWithHeader,
-  Input,
-  RowSectionWithHeader,
-  RowContainer,
-  ColumnContainer
+  ColumnSectionWithHeader
 } from "sequence-ui";
 
 class About extends Component {
@@ -30,7 +15,7 @@ class About extends Component {
           sequence-ui is a React component library built using
           styled-components.
         </Text>
-        <ColumnSectionWithHeader title="Why" sectionMargin={40}>
+        <ColumnSectionWithHeader title="Why" sectionMarginTop={40}>
           <Text textSize="1" isBold>
             The goal of sequence-ui is to Modularize components down to
             primitives and basic elements allowing developers to quickly build

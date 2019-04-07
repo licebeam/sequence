@@ -36,11 +36,11 @@ class App extends Component {
                 sequence-ui
               </Text>
             </ColumnSection>
-            <ColumnSection ratio={7} />
+            <ColumnSection ratio={6} />
           </RowSection>
           <RowSection>
             <ColumnSection ratio={3}>
-              <ColumnSection sectionMargin={20}>
+              <ColumnSection sectionMarginTop={20}>
                 <Text>Docs</Text>
                 <Button onClick={() => this.changePage("about")} noGap>
                   About
@@ -86,9 +86,8 @@ class App extends Component {
                 </Button>
               </ColumnSection>
             </ColumnSection>
-            <ColumnSection ratio={1} />
-            <ColumnSection ratio={6}>
-              <ColumnSection ratio={4} sectionMargin={20}>
+            <ColumnSection ratio={6} sectionMarginLeft={20}>
+              <ColumnSection ratio={4} sectionMarginTop={40}>
                 {this.state.page === "about" ? <About /> : null}
                 {this.state.page === "installation" ? <Installation /> : null}
                 {this.state.page === "getting-started" ? (

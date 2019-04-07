@@ -10,19 +10,36 @@ const FlexContainer = styled.div`
   height: 100%;
   overflow: auto;
   margin-top: ${props =>
-    props.sectionMargin ? props.sectionMargin + "px" : "0px"};
+    props.sectionMarginTop ? props.sectionMarginTop + "px" : "0px"};
+  margin-bottom: ${props =>
+    props.sectionMarginBottom ? props.sectionMarginBottom + "px" : "0px"};
+  margin-left: ${props =>
+    props.sectionMarginLeft ? props.sectionMarginLeft + "px" : "0px"};
+  margin-right: ${props =>
+    props.sectionMarginRight ? props.sectionMarginRight + "px" : "0px"};
   background-color: ${props => props.backgroundColor || "inherit"};
   color: ${props => props.textColor || "inherit"};
 `;
 
 class ColumnSection extends Component {
   render() {
-    const { backgroundColor, ratio, sectionMargin, textColor } = this.props;
+    const {
+      backgroundColor,
+      ratio,
+      sectionMarginTop,
+      sectionMarginBottom,
+      sectionMarginRight,
+      sectionMarginLeft,
+      textColor
+    } = this.props;
     return (
       <FlexContainer
         backgroundColor={backgroundColor}
         ratio={ratio}
-        sectionMargin={sectionMargin}
+        sectionMarginTop={sectionMarginTop}
+        sectionMarginBottom={sectionMarginBottom}
+        sectionMarginRight={sectionMarginRight}
+        sectionMarginLeft={sectionMarginLeft}
         textColor={textColor}
       >
         {this.props.children}

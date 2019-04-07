@@ -11,8 +11,15 @@ const FlexContainer = styled.div`
   overflow: auto;
   background-color: ${props => props.backgroundColor || "inherit"};
   margin-top: ${props =>
-    props.sectionMargin ? props.sectionMargin + "px" : "0px"};
+    props.sectionMarginTop ? props.sectionMarginTop + "px" : "0px"};
+  margin-bottom: ${props =>
+    props.sectionMarginBottom ? props.sectionMarginBottom + "px" : "0px"};
+  margin-left: ${props =>
+    props.sectionMarginLeft ? props.sectionMarginLeft + "px" : "0px"};
+  margin-right: ${props =>
+    props.sectionMarginRight ? props.sectionMarginRight + "px" : "0px"};
 `;
+
 const Header = styled.div`
   padding: 0.2rem;
   margin: 0.2rem;
@@ -32,13 +39,19 @@ class ColumnSectionWithHeader extends Component {
       headerColor,
       titleColor,
       ratio,
-      sectionMargin
+      sectionMarginTop,
+      sectionMarginBottom,
+      sectionMarginRight,
+      sectionMarginLeft
     } = this.props;
     return (
       <FlexContainer
         backgroundColor={backgroundColor}
         ratio={ratio}
-        sectionMargin={sectionMargin}
+        sectionMarginTop={sectionMarginTop}
+        sectionMarginBottom={sectionMarginBottom}
+        sectionMarginRight={sectionMarginRight}
+        sectionMarginLeft={sectionMarginLeft}
       >
         <Header titleColor={titleColor} headerColor={headerColor}>
           {title || "Column Title"}
