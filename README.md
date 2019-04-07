@@ -16,6 +16,8 @@ yarn add sequence-ui
 
 ## Usage
 
+For Documentation visit - [Documentation Page](https://licebeam.github.io/sequence/)
+
 This is not ready for production. Still in very early stages. Please do not use this module.
 
 ## License
