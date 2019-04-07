@@ -11,6 +11,7 @@ const TextContainer = styled.div`
   height: 100%;
   overflow: auto;
   font-size: ${props => (props.textSize ? props.textSize + "rem" : "1rem")};
+  font-weight: ${props => (props.isBold ? "bold" : "normal")};
   background-color: ${props => props.backgroundColor || "inherit"};
   color: ${props => props.textColor || "inherit"};
   margin: ${props =>
@@ -24,7 +25,8 @@ class Text extends Component {
       sectionMargin,
       ratio,
       textColor,
-      textSize
+      textSize,
+      isBold
     } = this.props;
     return (
       <TextContainer
@@ -33,6 +35,7 @@ class Text extends Component {
         ratio={ratio}
         textColor={textColor}
         textSize={textSize}
+        isBold={isBold}
       >
         {this.props.children}
       </TextContainer>

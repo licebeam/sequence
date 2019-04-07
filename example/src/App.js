@@ -33,8 +33,19 @@ class App extends Component {
         <CenteredColumnContainer>
           <RowSection>
             <Image imageURL={sequenceLogo} />
-            <Text textSize="2">Sequence-ui</Text>
+            <Text textSize="2" isBold>
+              sequence-ui
+            </Text>
             <ColumnSection ratio={3} />
+          </RowSection>
+          <RowSection>
+            <ColumnSection>
+              <Text>sidebar</Text>
+              <Button>Test</Button>
+            </ColumnSection>
+            <ColumnSection ratio={8}>
+              <Text>Content</Text>
+            </ColumnSection>
           </RowSection>
         </CenteredColumnContainer>
       </div>
