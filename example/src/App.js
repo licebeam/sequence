@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route, Link } from "react-router";
+import { Link } from "react-router-dom";
 import "./index.css";
 import sequenceLogo from "./images/sequence-ui-logo.gif";
 import {
