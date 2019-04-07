@@ -32,19 +32,40 @@ class App extends Component {
       <div className="App">
         <CenteredColumnContainer>
           <RowSection>
-            <Image imageURL={sequenceLogo} />
-            <Text textSize="2" isBold>
-              sequence-ui
-            </Text>
-            <ColumnSection ratio={3} />
-          </RowSection>
-          <RowSection>
-            <ColumnSection>
-              <Text>sidebar</Text>
-              <Button>Test</Button>
+            <ColumnSection ratio={1}>
+              <Image imageURL={sequenceLogo} />
+              <Text textSize="1" isBold>
+                sequence-ui
+              </Text>
+              <ColumnSection>
+                <Text>Docs</Text>
+                <Button noGap>About</Button>
+                <Button noGap>Installation</Button>
+                <Button noGap>Getting Started</Button>
+                <Text>Primitives</Text>
+                <Button noGap>Containers</Button>
+                <Button noGap>Sections</Button>
+                <Text>Basic</Text>
+                <Button noGap>Text</Button>
+                <Button noGap>Images</Button>
+                <Button noGap>Tags</Button>
+                <Text>Interactables</Text>
+                <Button noGap>Buttons</Button>
+                <Button noGap>Menus</Button>
+                <Button noGap>Inputs</Button>
+                <Button noGap>Modals</Button>
+              </ColumnSection>
             </ColumnSection>
-            <ColumnSection ratio={8}>
-              <Text>Content</Text>
+            <ColumnSection ratio={3}>
+              <Button noGap>Github</Button>
+              <Button noGap>Npm</Button>
+              <Button noGap>Bundle Phobia</Button>
+              <ColumnSection ratio={4}>
+                <Text textSize="1" isBold>
+                  sequence-ui is a React component library built using
+                  styled-components.
+                </Text>
+              </ColumnSection>
             </ColumnSection>
           </RowSection>
         </CenteredColumnContainer>

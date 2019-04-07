@@ -10,7 +10,7 @@ const TextContainer = styled.div`
   flex: ${props => props.ratio || "1"};
   height: 100%;
   overflow: auto;
-  font-size: ${props => (props.textSize ? props.textSize + "rem" : "1rem")};
+  font-size: ${props => (props.textSize ? props.textSize + "rem" : ".8rem")};
   font-weight: ${props => (props.isBold ? "bold" : "normal")};
   background-color: ${props => props.backgroundColor || "inherit"};
   color: ${props => props.textColor || "inherit"};
