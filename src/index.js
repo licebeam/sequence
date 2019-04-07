@@ -1,28 +1,28 @@
 //Containers
-import CenteredColumnContainer from 'containers/CenteredColumnContainer';
-import ColumnContainer from 'containers/ColumnContainer';
-import RowContainer from 'containers/RowContainer';
+import CenteredColumnContainer from './components/containers/CenteredColumnContainer';
+import ColumnContainer from './components/containers/ColumnContainer';
+import RowContainer from './components/containers/RowContainer';
 //Sections
-import ColumnSection from 'sections/ColumnSection';
-import ColumnSectionWithHeader from 'sections/ColumnSectionWithHeader';
-import RowSection from 'sections/RowSection';
-import RowSectionWithHeader from 'sections/RowSectionWithHeader';
+import ColumnSection from './components/sections/ColumnSection';
+import ColumnSectionWithHeader from './components/sections/ColumnSectionWithHeader';
+import RowSection from './components/sections/RowSection';
+import RowSectionWithHeader from './components/sections/RowSectionWithHeader';
 //Cards
-import Card from 'cards/Card';
-import CardWithHeader from 'cards/CardWithHeader';
+import Card from './components/cards/Card';
+import CardWithHeader from './components/cards/CardWithHeader';
 //Inputs
-import Input from 'inputs/Input';
+import Input from './components/inputs/Input';
 //Buttons
-import Button from 'buttons/Button';
+import Button from './components/buttons/Button';
 //Media
-import Image from 'media/Image';
-import ImageCircle from 'media/ImageCircle';
+import Image from './components/media/Image';
+import ImageCircle from './components/media/ImageCircle';
 //Modals
-import Modal from 'modals/Modal';
+import Modal from './components/modals/Modal';
 //Tags
-import Tag from 'tags/Tag';
+import Tag from './components/tags/Tag';
 //Dropdowns
-import DropDown from 'dropdowns/DropDownItem'
+import DropDown from './components/dropdowns/DropDownItem'
 
 
 export {
