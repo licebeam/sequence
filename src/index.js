@@ -24,7 +24,7 @@ import Tag from "./Tag.jsx";
 //Dropdowns
 import DropDown from "./DropDown.jsx";
 //Text
-import Text from "./Text.jsx";
+import Text from "./components/Text.jsx";
 
 export {
   //Containers
