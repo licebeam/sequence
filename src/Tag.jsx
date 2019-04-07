@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { colors } from '../constants';
-import '../base.css';
+import { colors } from './constants';
+import './base.css';
 
 const TagFlexContainer = styled.div`
   padding: .2rem;

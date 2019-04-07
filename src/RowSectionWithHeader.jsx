@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { colors } from '../constants';
-import '../base.css';
+import { colors } from './constants';
+import './base.css';
 
-const FlexContainer = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex: ${props => props.ratio || '1'};
@@ -11,6 +11,11 @@ const FlexContainer = styled.div`
   overflow: auto;
   background-color: ${props => props.backgroundColor || 'inherit'};
   margin: ${props => props.sectionMargin ? props.sectionMargin + 'px' : '0px'};
+`
+const FlexContainer = styled.div`
+  display: flex;
+  flex: 1;
+  overflow: auto;
 `
 const Header = styled.div`
   padding: .2rem;
@@ -22,19 +27,19 @@ const Header = styled.div`
   background-color: ${props => props.headerColor || colors.defaultSectionHeaderColor};
 `
 
-class ColumnSectionWithHeader extends Component {
+class RowSectionWithHeader extends Component {
   render() {
-    const { title, backgroundColor, headerColor, titleColor, ratio, sectionMargin } = this.props;
+    const { title, backgroundColor, headerColor, titleColor, sectionMargin, ratio } = this.props;
     return (
-      <FlexContainer backgroundColor={backgroundColor} ratio={ratio} sectionMargin={sectionMargin}>
-        <Header titleColor={titleColor} headerColor={headerColor}>{title || "Column Title"}</Header>
+      <Wrapper backgroundColor={backgroundColor} sectionMargin={sectionMargin} ratio={ratio}>
+        <Header titleColor={titleColor} headerColor={headerColor}>{title || "Row Title"}</Header>
         <FlexContainer>
           {this.props.children}
         </FlexContainer>
-      </FlexContainer>
+      </Wrapper>
 
     )
   }
 }
 
-export default ColumnSectionWithHeader
+export default RowSectionWithHeader

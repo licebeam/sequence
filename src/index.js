@@ -1,28 +1,28 @@
 //Containers
-import CenteredColumnContainer from './components';
-import ColumnContainer from './components';
-import RowContainer from './components';
+import CenteredColumnContainer from './CenteredColumnContainer.jsx';
+import ColumnContainer from './ColumnContainer.jsx';
+import RowContainer from './RowContainer.jsx';
 //Sections
-import ColumnSection from './components';
-import ColumnSectionWithHeader from './components';
-import RowSection from './components';
-import RowSectionWithHeader from './components';
+import ColumnSection from './ColumnSection.jsx';
+import ColumnSectionWithHeader from './ColumnSectionWithHeader.jsx';
+import RowSection from './RowSection.jsx';
+import RowSectionWithHeader from './RowSectionWithHeader.jsx';
 //Cards
-import Card from './components';
-import CardWithHeader from './components';
+import Card from './Card.jsx';
+import CardWithHeader from './CardWithHeader.jsx';
 //Inputs
-import Input from './components';
+import Input from './Input.jsx';
 //Buttons
-import Button from './components';
+import Button from './Button.jsx';
 //Media
-import Image from './components';
-import ImageCircle from './components';
+import Image from './Image.jsx';
+import ImageCircle from './ImageCircle.jsx';
 //Modals
-import Modal from './components';
+import Modal from './Modal.jsx';
 //Tags
-import Tag from './components';
+import Tag from './Tag.jsx';
 //Dropdowns
-import DropDown from './components'
+import DropDown from './DropDown.jsx'
 
 
 export {

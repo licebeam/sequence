@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { colors } from '../constants';
-import '../base.css';
+import { colors } from './constants';
+import './base.css';
 
 const FlexContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   overflow: auto;
   background-color: ${props => props.backgroundColor || colors.defaultContainerColor};
 `
 
-class ColumnContainer extends Component {
+class RowContainer extends Component {
   render() {
     const { backgroundColor } = this.props;
     return (
@@ -21,4 +21,4 @@ class ColumnContainer extends Component {
   }
 }
 
-export default ColumnContainer
+export default RowContainer

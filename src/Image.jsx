@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { colors } from '../constants';
-import '../base.css';
+import { colors } from './constants';
+import './base.css';
 
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
   overflow: auto;
-  flex: 1;
   margin: .2rem;
   align-self: center;
-  border-radius: 50%;
+  flex: 1;
   width: ${props => props.imageWidth ? props.imageWidth + 'px' : '100px'};
   height: ${props => props.imageHeight ? props.imageHeight + 'px' : '100px'};
   background-color: ${props => props.backgroundColor || colors.defaultContainerColor};
@@ -21,7 +20,7 @@ const FlexContainer = styled.div`
   }
 `
 
-class ImageCircle extends Component {
+class Image extends Component {
   render() {
     const { backgroundColor, imageURL, imageWidth, imageHeight } = this.props;
     return (
@@ -32,4 +31,4 @@ class ImageCircle extends Component {
   }
 }
 
-export default ImageCircle
+export default Image
