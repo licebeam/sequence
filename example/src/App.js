@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router";
-import { Link, BrowserRouter } from "react-router-dom";
 import "./index.css";
 import sequenceLogo from "./images/sequence-ui-logo.gif";
 import {
@@ -28,165 +26,127 @@ import GettingStarted from "./Pages/GettingStarted";
 import Construction from "./Pages/Construction";
 
 class App extends Component {
-  state = { modalOpen: false };
+  state = { modalOpen: false, page: "about" };
 
   toggleModal = () => {
     this.setState({ modalOpen: !this.state.modalOpen });
   };
+
+  changePage = page => {
+    this.setState({ page });
+  };
+
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
-          <CenteredColumnContainer>
-            <RowSection>
-              <ColumnSection ratio={3}>
-                <Image imageURL={sequenceLogo} />
-                <Text textSize="1" isBold>
-                  sequence-ui
-                </Text>
-              </ColumnSection>
-              <ColumnSection ratio={7} />
-            </RowSection>
-            <RowSection>
-              <ColumnSection ratio={3}>
-                <ColumnSection sectionMargin={20}>
-                  <Text>Docs</Text>
-                  <Link to="/sequence">
-                    <Button noGap>About</Button>
-                  </Link>
-                  <Link to="/sequence/install">
-                    <Button noGap>Installation</Button>
-                  </Link>
-                  <Link to="/sequence/start">
-                    <Button noGap>Getting Started</Button>
-                  </Link>
-                  <Text>Primitives</Text>
-                  <Link to="/sequence/containers">
-                    <Button noGap>Containers</Button>
-                  </Link>
-                  <Link to="/sequence/sections">
-                    <Button noGap>Sections</Button>
-                  </Link>
-                  <Text>Basic Elements</Text>
-                  <Link to="/sequence/text">
-                    <Button noGap>Text</Button>
-                  </Link>
-                  <Link to="/sequence/images">
-                    <Button noGap>Images</Button>
-                  </Link>
-                  <Link to="/sequence/tags">
-                    <Button noGap>Tags</Button>
-                  </Link>
-                  <Text>Interactables</Text>
-                  <Link to="/sequence/buttons">
-                    <Button noGap>Buttons</Button>
-                  </Link>
-                  <Link to="/sequence/menus">
-                    <Button noGap>Menus</Button>
-                  </Link>
-                  <Link to="/sequence/inputs">
-                    <Button noGap>Inputs</Button>
-                  </Link>
-                  <Link to="/sequence/modals">
-                    <Button noGap>Modals</Button>
-                  </Link>
-                </ColumnSection>
-              </ColumnSection>
-              <ColumnSection ratio={1} />
-              <ColumnSection ratio={6}>
-                <ColumnSection ratio={4} sectionMargin={20}>
-                  <Switch>
-                    <Route exact path="/sequence" component={About} />
-                    <Route
-                      exact
-                      path="/sequence/install"
-                      component={Installation}
-                    />
-                    <Route
-                      exact
-                      path="/sequence/start"
-                      component={GettingStarted}
-                    />
-                    <Route
-                      exact
-                      path="/sequence/containers"
-                      component={Construction}
-                    />
-                    <Route
-                      exact
-                      path="/sequence/sections"
-                      component={Construction}
-                    />
-                    <Route
-                      exact
-                      path="/sequence/text"
-                      component={Construction}
-                    />
-                    <Route
-                      exact
-                      path="/sequence/images"
-                      component={Construction}
-                    />
-                    <Route
-                      exact
-                      path="/sequence/tags"
-                      component={Construction}
-                    />
-                    <Route
-                      exact
-                      path="/sequence/buttons"
-                      component={Construction}
-                    />
-                    <Route
-                      exact
-                      path="/sequence/menus"
-                      component={Construction}
-                    />
-                    <Route
-                      exact
-                      path="/sequence/inputs"
-                      component={Construction}
-                    />
-                    <Route
-                      exact
-                      path="/sequence/modals"
-                      component={Construction}
-                    />
-                  </Switch>
-                </ColumnSection>
-              </ColumnSection>
-            </RowSection>
-            <RowSection>
+      <div className="App">
+        <CenteredColumnContainer>
+          <RowSection>
+            <ColumnSection ratio={3}>
+              <Image imageURL={sequenceLogo} />
+              <Text textSize="1" isBold>
+                sequence-ui
+              </Text>
+            </ColumnSection>
+            <ColumnSection ratio={7} />
+          </RowSection>
+          <RowSection>
+            <ColumnSection ratio={3}>
               <ColumnSection sectionMargin={20}>
-                <Text>Thanks for checking out sequence-ui</Text>
-                <RowSection>
-                  <a
-                    target="_blank"
-                    className="page-link"
-                    href="https://github.com/licebeam/sequence"
-                  >
-                    Github Repo
-                  </a>
-                  <a
-                    target="_blank"
-                    className="page-link"
-                    href="https://www.npmjs.com/package/sequence-ui"
-                  >
-                    NPM
-                  </a>
-                  <a
-                    target="_blank"
-                    className="page-link"
-                    href="https://bundlephobia.com/result?p=sequence-ui@0.1.3"
-                  >
-                    Bundle Phobia
-                  </a>
-                </RowSection>
+                <Text>Docs</Text>
+                <Button onClick={() => this.changePage("about")} noGap>
+                  About
+                </Button>
+                <Button onClick={() => this.changePage("installation")} noGap>
+                  Installation
+                </Button>
+                <Button
+                  onClick={() => this.changePage("getting-started")}
+                  noGap
+                >
+                  Getting Started
+                </Button>
+                <Text>Primitives</Text>
+                <Button onClick={() => this.changePage("containers")} noGap>
+                  Containers
+                </Button>
+                <Button onClick={() => this.changePage("sections")} noGap>
+                  Sections
+                </Button>
+                <Text>Basic Elements</Text>
+                <Button onClick={() => this.changePage("text")} noGap>
+                  Text
+                </Button>
+                <Button onClick={() => this.changePage("images")} noGap>
+                  Images
+                </Button>
+                <Button onClick={() => this.changePage("tags")} noGap>
+                  Tags
+                </Button>
+                <Text>Interactables</Text>
+                <Button onClick={() => this.changePage("buttons")} noGap>
+                  Buttons
+                </Button>
+                <Button onClick={() => this.changePage("menus")} noGap>
+                  Menus
+                </Button>
+                <Button onClick={() => this.changePage("inputs")} noGap>
+                  Inputs
+                </Button>
+                <Button onClick={() => this.changePage("modals")} noGap>
+                  Modals
+                </Button>
               </ColumnSection>
-            </RowSection>
-          </CenteredColumnContainer>
-        </div>
-      </BrowserRouter>
+            </ColumnSection>
+            <ColumnSection ratio={1} />
+            <ColumnSection ratio={6}>
+              <ColumnSection ratio={4} sectionMargin={20}>
+                {this.state.page === "about" ? <About /> : null}
+                {this.state.page === "installation" ? <Installation /> : null}
+                {this.state.page === "getting-started" ? (
+                  <GettingStarted />
+                ) : null}
+                {this.state.page === "containers" ? <Construction /> : null}
+                {this.state.page === "sections" ? <Construction /> : null}
+                {this.state.page === "text" ? <Construction /> : null}
+                {this.state.page === "images" ? <Construction /> : null}
+                {this.state.page === "tags" ? <Construction /> : null}
+                {this.state.page === "buttons" ? <Construction /> : null}
+                {this.state.page === "menus" ? <Construction /> : null}
+                {this.state.page === "inputs" ? <Construction /> : null}
+                {this.state.page === "modals" ? <Construction /> : null}
+              </ColumnSection>
+            </ColumnSection>
+          </RowSection>
+          <RowSection>
+            <ColumnSection sectionMargin={20}>
+              <Text>Thanks for checking out sequence-ui</Text>
+              <RowSection>
+                <a
+                  target="_blank"
+                  className="page-link"
+                  href="https://github.com/licebeam/sequence"
+                >
+                  Github Repo
+                </a>
+                <a
+                  target="_blank"
+                  className="page-link"
+                  href="https://www.npmjs.com/package/sequence-ui"
+                >
+                  NPM
+                </a>
+                <a
+                  target="_blank"
+                  className="page-link"
+                  href="https://bundlephobia.com/result?p=sequence-ui@0.1.3"
+                >
+                  Bundle Phobia
+                </a>
+              </RowSection>
+            </ColumnSection>
+          </RowSection>
+        </CenteredColumnContainer>
+      </div>
     );
   }
 }
