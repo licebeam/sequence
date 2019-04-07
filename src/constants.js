@@ -1,4 +1,10 @@
 export const colors = {
+  backgroundColor: "#fafafa",
+  primaryColor: "#3A8687",
+  primaryDark: "#173E56",
+  secondaryColor: "#DFF688",
+  secondaryDark: "#E54A26",
+  textColor: "#000",
   //default containers
   defaultContainerColor: "#fafafa",
   //default sections
