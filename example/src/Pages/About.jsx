@@ -12,7 +12,11 @@ class About extends Component {
     const exampleCode = '<Text textSize="1" isBold> My Cool Text </Text>';
     return (
       <ColumnContainer>
-        <ColumnSection>
+        <ColumnSection
+          backgroundColor="blue"
+          textColor="white"
+          sectionPadding="20"
+        >
           <Text textSize="1" isBold>
             sequence-ui is a React component library built using
             styled-components.

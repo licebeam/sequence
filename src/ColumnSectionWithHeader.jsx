@@ -21,8 +21,7 @@ const FlexContainer = styled.div`
 `;
 
 const Header = styled.div`
-  padding: 0.2rem;
-  margin: 0.2rem;
+  margin-bottom: 0.2rem;
   font-size: 1.4rem;
   font-weight: bold;
   color: ${props => props.titleColor || colors.defaultSectionTextColor};
