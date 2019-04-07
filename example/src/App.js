@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./index.css";
 import sequenceLogo from "./images/sequence-ui-logo.gif";
 import {
   DropDown,
@@ -31,8 +32,8 @@ class App extends Component {
         <CenteredColumnContainer>
           <RowSection backgroundColor="red">
             <Image imageURL={sequenceLogo} />
-            {/* <h1>Sequence-ui</h1> */}
-            {/* <ColumnSection ratio={6} /> */}
+            <h1>Sequence-ui</h1>
+            <ColumnSection ratio={6} />
           </RowSection>
         </CenteredColumnContainer>
       </div>
