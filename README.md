@@ -12,19 +12,7 @@ npm install --save sequence
 
 ## Usage
 
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'sequence'
-
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
-```
+This is not ready for production. Still in very early stages. Please do not use this module.
 
 ## License
 
