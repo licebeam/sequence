@@ -126,7 +126,7 @@ class App extends Component {
             </ColumnSection>
           </RowSection>
           <RowSection>
-            <ColumnSection sectionMargin={20}>
+            <ColumnSection sectionMarginTop={20}>
               <Text>Thanks for checking out sequence-ui</Text>
               <RowSection>
                 <a
