@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
 import {
   DropDown,
   Tag,
@@ -21,7 +22,42 @@ import {
 
 class GettingStarted extends Component {
   render() {
-    return <CenteredColumnContainer>Getting Started</CenteredColumnContainer>;
+    const exampleCode = '<Text textSize="1" isBold> My Cool Text </Text>';
+    return (
+      <ColumnContainer>
+        <ColumnSectionWithHeader title="Getting Started" sectionMarginTop={40}>
+          <Text textSize="1" isBold>
+            The goal of sequence-ui is to Modularize components down to
+            primitives and basic elements allowing developers to quickly build
+            compound components.
+          </Text>
+          <SyntaxHighlighter wrapLines={true} language="html">
+            {exampleCode}
+          </SyntaxHighlighter>
+        </ColumnSectionWithHeader>
+        <ColumnSection
+          backgroundColor="#3A8687"
+          textColor="#fafafa"
+          sectionPadding="20"
+          sectionMarginTop="20"
+        >
+          <Text textSize="1" isBold>
+            Components come with basic props that you can pass in to change
+            different attributes of a component.
+          </Text>
+        </ColumnSection>
+        <ColumnSection sectionPadding="10">
+          <Button>Example Button</Button>
+          <SyntaxHighlighter wrapLines={true} language="html">
+            {exampleCode}
+          </SyntaxHighlighter>
+          <Button isError>Example Button</Button>
+          <SyntaxHighlighter wrapLines={true} language="html">
+            {exampleCode}
+          </SyntaxHighlighter>
+        </ColumnSection>
+      </ColumnContainer>
+    );
   }
 }
 
