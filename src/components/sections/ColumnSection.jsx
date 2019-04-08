@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { colors } from "./constants";
-import "./base.css";
+import { colors } from "../../constants";
+import "../../base.css";
 
 const FlexContainer = styled.div`
   display: flex;
@@ -9,7 +9,8 @@ const FlexContainer = styled.div`
   flex: ${props => props.ratio || "1"};
   height: 100%;
   overflow: auto;
-  background-color: ${props => props.backgroundColor || "inherit"};
+  padding: ${props =>
+    props.sectionPadding ? props.sectionPadding + "px" : "0px"};
   margin-top: ${props =>
     props.sectionMarginTop ? props.sectionMarginTop + "px" : "0px"};
   margin-bottom: ${props =>
@@ -18,29 +19,21 @@ const FlexContainer = styled.div`
     props.sectionMarginLeft ? props.sectionMarginLeft + "px" : "0px"};
   margin-right: ${props =>
     props.sectionMarginRight ? props.sectionMarginRight + "px" : "0px"};
+  background-color: ${props => props.backgroundColor || "inherit"};
+  color: ${props => props.textColor || "inherit"};
 `;
 
-const Header = styled.div`
-  margin-bottom: 0.4rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: ${props => props.titleColor || colors.defaultSectionTextColor};
-  background-color: ${props =>
-    props.headerColor || colors.defaultSectionHeaderColor};
-`;
-
-class ColumnSectionWithHeader extends Component {
+class ColumnSection extends Component {
   render() {
     const {
-      title,
       backgroundColor,
-      headerColor,
-      titleColor,
       ratio,
       sectionMarginTop,
       sectionMarginBottom,
       sectionMarginRight,
-      sectionMarginLeft
+      sectionMarginLeft,
+      sectionPadding,
+      textColor
     } = this.props;
     return (
       <FlexContainer
@@ -50,14 +43,13 @@ class ColumnSectionWithHeader extends Component {
         sectionMarginBottom={sectionMarginBottom}
         sectionMarginRight={sectionMarginRight}
         sectionMarginLeft={sectionMarginLeft}
+        sectionPadding={sectionPadding}
+        textColor={textColor}
       >
-        <Header titleColor={titleColor} headerColor={headerColor}>
-          {title || "Column Title"}
-        </Header>
-        <FlexContainer>{this.props.children}</FlexContainer>
+        {this.props.children}
       </FlexContainer>
     );
   }
 }
 
-export default ColumnSectionWithHeader;
+export default ColumnSection;

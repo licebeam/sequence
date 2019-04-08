@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import { colors } from './constants';
-import './base.css';
+import React, { Component } from "react";
+import styled from "styled-components";
+import { colors } from "../../constants";
+import "../../base.css";
 
 const Container = styled.div`
-  font-size: .8rem;
-  transition: .2s all;
+  font-size: 0.8rem;
+  transition: 0.2s all;
   background-color: ${colors.defaultButtonBackground};
   display: flex;
   flex-direction: column;
 `;
 const DropDownMenu = styled.div`
-  padding: .2rem;
+  padding: 0.2rem;
   background-color: ${colors.defaultButtonBackground};
   border-bottom: 1px solid ${colors.defaultButtonHoverColor};
   display: flex;
@@ -26,7 +26,7 @@ const DropDownMenu = styled.div`
   }
 `;
 const DropDownItem = styled.div`
-  padding: .2rem;
+  padding: 0.2rem;
   flex: 1;
   background-color: ${colors.defaultButtonBackground};
   border-bottom: 1px solid ${colors.defaultButtonHoverColor};
@@ -51,35 +51,29 @@ class DropDown extends React.Component {
 
   render() {
     const { title, itemArr, onClick, hoverDrop } = this.props;
-    const dropDownArr = itemArr || ['item1', 'item2', 'item3'];
+    const dropDownArr = itemArr || ["item1", "item2", "item3"];
     return (
       <Container
         dropDownOpen={this.state.dropDownOpen}
         dropDownArr={dropDownArr}
-        onMouseEnter={hoverDrop ? () => this.toggleDropDown() : () => { }}
-        onMouseLeave={hoverDrop ? () => this.toggleDropDown() : () => { }}
+        onMouseEnter={hoverDrop ? () => this.toggleDropDown() : () => {}}
+        onMouseLeave={hoverDrop ? () => this.toggleDropDown() : () => {}}
       >
-        <DropDownMenu
-          onClick={() => this.toggleDropDown()}
-        >
-          <div>{title || 'Drop Down'}</div>
+        <DropDownMenu onClick={() => this.toggleDropDown()}>
+          <div>{title || "Drop Down"}</div>
         </DropDownMenu>
-        {
-          this.state.dropDownOpen
-            ? dropDownArr.map((item, i) => {
+        {this.state.dropDownOpen
+          ? dropDownArr.map((item, i) => {
               return (
-                <DropDownItem
-                  key={i}
-                  onClick={() => onClick(item)}>
+                <DropDownItem key={i} onClick={() => onClick(item)}>
                   <div>{item}</div>
                 </DropDownItem>
               );
             })
-            : null
-        }
-      </Container >
+          : null}
+      </Container>
     );
   }
 }
 
-export default DropDown
+export default DropDown;
