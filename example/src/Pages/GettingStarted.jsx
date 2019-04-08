@@ -22,17 +22,26 @@ import {
 
 class GettingStarted extends Component {
   render() {
-    const exampleCode = '<Text textSize="1" isBold> My Cool Text </Text>';
+    const exampleCode = 'import { Button } from "sequence-ui"';
+    const exampleCode2 = "<Button> Example Button </Button>";
+    const exampleCode3 = "<Button noGap> Example Button </Button>";
+    const exampleCode4 = "<Button isError> Example Button </Button>";
     return (
       <ColumnContainer>
         <ColumnSectionWithHeader title="Getting Started" sectionMarginTop={40}>
           <Text textSize="1" isBold>
-            The goal of sequence-ui is to Modularize components down to
-            primitives and basic elements allowing developers to quickly build
-            compound components.
+            Getting started is as simple as importing the component you want to
+            use from sequence-ui.
           </Text>
           <SyntaxHighlighter wrapLines={true} language="html">
             {exampleCode}
+          </SyntaxHighlighter>
+          <Text textSize="1" isBold>
+            Getting started is as simple as importing the component you want to
+            use from sequence-ui.
+          </Text>
+          <SyntaxHighlighter wrapLines={true} language="html">
+            {exampleCode2}
           </SyntaxHighlighter>
         </ColumnSectionWithHeader>
         <ColumnSection
@@ -47,13 +56,13 @@ class GettingStarted extends Component {
           </Text>
         </ColumnSection>
         <ColumnSection sectionPadding="10">
-          <Button>Example Button</Button>
+          <Button noGap>Example Button</Button>
           <SyntaxHighlighter wrapLines={true} language="html">
-            {exampleCode}
+            {exampleCode3}
           </SyntaxHighlighter>
           <Button isError>Example Button</Button>
           <SyntaxHighlighter wrapLines={true} language="html">
-            {exampleCode}
+            {exampleCode4}
           </SyntaxHighlighter>
         </ColumnSection>
       </ColumnContainer>
