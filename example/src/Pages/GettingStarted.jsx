@@ -37,8 +37,7 @@ class GettingStarted extends Component {
             {exampleCode}
           </SyntaxHighlighter>
           <Text textSize="1" isBold>
-            Getting started is as simple as importing the component you want to
-            use from sequence-ui.
+            After importing you can use the component as you would normally.
           </Text>
           <SyntaxHighlighter wrapLines={true} language="html">
             {exampleCode2}
