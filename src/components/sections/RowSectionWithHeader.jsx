@@ -8,6 +8,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   flex: ${props => props.ratio || "1"};
   height: 100%;
+  align-content: center;
+  justify-content: center;
   overflow: auto;
   background-color: ${props => props.backgroundColor || "inherit"};
   margin-top: ${props =>

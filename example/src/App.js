@@ -36,7 +36,11 @@ class App extends Component {
                 sequence-ui
               </Text>
             </ColumnSection>
-            <ColumnSection ratio={6} />
+            <ColumnSection
+              ratio={6}
+              sectionMarginLeft={40}
+              sectionMarginRight={20}
+            />
           </RowSection>
           <RowSection>
             <ColumnSection ratio={3}>
