@@ -13,19 +13,36 @@ const FlexContainer = styled.div`
   justify-content: center;
   background-color: ${props => props.backgroundColor || "inherit"};
   color: ${props => props.textColor || "inherit"};
+  margin-top: ${props =>
+    props.sectionMarginTop ? props.sectionMarginTop + "px" : "0px"};
+  margin-bottom: ${props =>
+    props.sectionMarginBottom ? props.sectionMarginBottom + "px" : "0px"};
   margin-left: ${props =>
-    props.sectionMargin ? props.sectionMargin + "px" : "0px"};
+    props.sectionMarginLeft ? props.sectionMarginLeft + "px" : "0px"};
+  margin-right: ${props =>
+    props.sectionMarginRight ? props.sectionMarginRight + "px" : "0px"};
 `;
 
 class RowSection extends Component {
   render() {
-    const { backgroundColor, sectionMargin, ratio, textColor } = this.props;
+    const {
+      backgroundColor,
+      sectionMarginTop,
+      sectionMarginBottom,
+      sectionMarginRight,
+      sectionMarginLeft,
+      ratio,
+      textColor
+    } = this.props;
     return (
       <FlexContainer
         backgroundColor={backgroundColor}
-        sectionMargin={sectionMargin}
         ratio={ratio}
         textColor={textColor}
+        sectionMarginTop={sectionMarginTop}
+        sectionMarginBottom={sectionMarginBottom}
+        sectionMarginRight={sectionMarginRight}
+        sectionMarginLeft={sectionMarginLeft}
       >
         {this.props.children}
       </FlexContainer>

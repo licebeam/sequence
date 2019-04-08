@@ -10,8 +10,14 @@ const Wrapper = styled.div`
   height: 100%;
   overflow: auto;
   background-color: ${props => props.backgroundColor || "inherit"};
-  margin: ${props =>
-    props.sectionMargin ? props.sectionMargin + "px" : "0px"};
+  margin-top: ${props =>
+    props.sectionMarginTop ? props.sectionMarginTop + "px" : "0px"};
+  margin-bottom: ${props =>
+    props.sectionMarginBottom ? props.sectionMarginBottom + "px" : "0px"};
+  margin-left: ${props =>
+    props.sectionMarginLeft ? props.sectionMarginLeft + "px" : "0px"};
+  margin-right: ${props =>
+    props.sectionMarginRight ? props.sectionMarginRight + "px" : "0px"};
 `;
 const FlexContainer = styled.div`
   display: flex;
@@ -36,14 +42,20 @@ class RowSectionWithHeader extends Component {
       backgroundColor,
       headerColor,
       titleColor,
-      sectionMargin,
-      ratio
+      ratio,
+      sectionMarginTop,
+      sectionMarginBottom,
+      sectionMarginRight,
+      sectionMarginLeft
     } = this.props;
     return (
       <Wrapper
         backgroundColor={backgroundColor}
-        sectionMargin={sectionMargin}
         ratio={ratio}
+        sectionMarginTop={sectionMarginTop}
+        sectionMarginBottom={sectionMarginBottom}
+        sectionMarginRight={sectionMarginRight}
+        sectionMarginLeft={sectionMarginLeft}
       >
         <Header titleColor={titleColor} headerColor={headerColor}>
           {title || "Row Title"}
