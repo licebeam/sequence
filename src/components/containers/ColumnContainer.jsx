@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { colors } from "../../../constants";
+import { colors } from "../../constants";
 import "../../base.css";
 
 const FlexContainer = styled.div`

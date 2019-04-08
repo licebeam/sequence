@@ -8,12 +8,12 @@ import ColumnSectionWithHeader from "./ColumnSectionWithHeader.jsx";
 import RowSection from "./RowSection.jsx";
 import RowSectionWithHeader from "./RowSectionWithHeader.jsx";
 //Cards
-import Card from "./Card.jsx";
-import CardWithHeader from "./CardWithHeader.jsx";
+import Card from "./components/cards/Card.jsx";
+import CardWithHeader from "./components/cards/CardWithHeader.jsx";
 //Inputs
 import Input from "./Input.jsx";
 //Buttons
-import Button from "./Button.jsx";
+import Button from "./components/buttons/Button.jsx";
 //Media
 import Image from "./Image.jsx";
 import ImageCircle from "./ImageCircle.jsx";
