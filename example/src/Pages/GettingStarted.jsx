@@ -51,7 +51,7 @@ class GettingStarted extends Component {
         >
           <Text textSize="1" isBold>
             Components come with basic props that you can pass in to change
-            different attributes of a component.
+            different attributes.
           </Text>
         </ColumnSection>
         <ColumnSection sectionPadding="10">
