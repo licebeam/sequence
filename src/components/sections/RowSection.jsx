@@ -6,7 +6,7 @@ import "../../base.css";
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
-  flex: ${props => props.ratio || "false"};
+  flex: ${props => props.ratio || "1"};
   height: ${props => props.sectionHeight || '100%'};
   width: ${props => props.sectionWidth || 'false'};
   align-content: center;
