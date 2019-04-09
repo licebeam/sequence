@@ -8,7 +8,6 @@ const FlexContainer = styled.div`
   flex-direction: column;
   margin: 0 auto;
   width: ${props => props.bodyWidth || "70%"};
-  overflow: auto;
   background-color: ${props =>
     props.backgroundColor || colors.defaultContainerColor};
   @media only screen and (max-width: 768px) {

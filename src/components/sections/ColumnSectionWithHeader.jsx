@@ -6,10 +6,11 @@ import "../../base.css";
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
-  flex: ${props => props.ratio || "1"};
+  flex: ${props => props.ratio || 'false'};
   height: ${props => props.sectionHeight || '100%'};
   width: ${props => props.sectionWidth || 'false'};
   overflow: auto;
+  flex-shrink: 0;
   background-color: ${props => props.backgroundColor || "inherit"};
   margin-top: ${props =>
     props.sectionMarginTop ? props.sectionMarginTop + "px" : "0px"};

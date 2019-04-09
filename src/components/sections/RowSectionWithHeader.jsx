@@ -10,7 +10,6 @@ const Wrapper = styled.div`
   height: 100%;
   align-content: center;
   justify-content: center;
-  overflow: auto;
   background-color: ${props => props.backgroundColor || "inherit"};
   margin-top: ${props =>
     props.sectionMarginTop ? props.sectionMarginTop + "px" : "0px"};
@@ -24,7 +23,6 @@ const Wrapper = styled.div`
 const FlexContainer = styled.div`
   display: flex;
   flex: 1;
-  overflow: auto;
 `;
 const Header = styled.div`
   padding: 0.2rem;

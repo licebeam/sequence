@@ -12,7 +12,6 @@ const TextContainer = styled.div`
   justify-content: ${props => (props.isCenter ? "center" : "false")};
   flex: ${props => props.ratio || "1"};
   height: 100%;
-  overflow: auto;
   font-size: ${props => (props.textSize ? props.textSize + "rem" : ".8rem")};
   font-weight: ${props => (props.isBold ? "bold" : "normal")};
   background-color: ${props => props.backgroundColor || "inherit"};

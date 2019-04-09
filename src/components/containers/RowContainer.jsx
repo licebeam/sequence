@@ -6,7 +6,6 @@ import "../../base.css";
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
-  overflow: auto;
   background-color: ${props =>
     props.backgroundColor || colors.defaultContainerColor};
 `;

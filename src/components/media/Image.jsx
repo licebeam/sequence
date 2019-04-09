@@ -6,14 +6,13 @@ import "../../base.css";
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
-  overflow: auto;
   align-self: center;
   width: ${props => (props.imageWidth ? props.imageWidth + "px" : "100px")};
   height: ${props => (props.imageHeight ? props.imageHeight + "px" : "100px")};
   .image {
     width: ${props => (props.imageWidth ? props.imageWidth + "px" : "100px")};
     height: ${props =>
-      props.imageHeight ? props.imageHeight + "px" : "100px"};
+    props.imageHeight ? props.imageHeight + "px" : "100px"};
     object-fit: cover;
   }
 `;

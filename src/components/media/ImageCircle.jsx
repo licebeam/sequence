@@ -6,7 +6,6 @@ import "../../base.css";
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
-  overflow: auto;
   flex: 1;
   margin: 0.2rem;
   align-self: center;
@@ -18,7 +17,7 @@ const FlexContainer = styled.div`
   .image {
     width: ${props => (props.imageWidth ? props.imageWidth + "px" : "100px")};
     height: ${props =>
-      props.imageHeight ? props.imageHeight + "px" : "100px"};
+    props.imageHeight ? props.imageHeight + "px" : "100px"};
     object-fit: cover;
   }
 `;

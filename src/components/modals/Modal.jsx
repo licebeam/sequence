@@ -19,7 +19,6 @@ const FlexContainer = styled.div`
   z-index: 20;
   display: flex;
   flex-direction: row;
-  overflow: auto;
   position: absolute;
   top: 50%;
   left: 50%;
