@@ -8,7 +8,7 @@ const FlexContainer = styled.div`
   flex-direction: column;
   flex: ${props => props.ratio || "1"};
   height: ${props => props.sectionHeight || '100%'};
-  width: ${props => props.sectionWidth || '100%'};
+  width: ${props => props.sectionWidth || 'false'};
   overflow: auto;
   padding: ${props =>
     props.sectionPadding ? props.sectionPadding + "px" : "0px"};

@@ -17,7 +17,7 @@ class About extends Component {
           textColor="#fafafa"
           sectionPadding="20"
         >
-          <Text textSize="1" isBold>
+          <Text isCenter textSize="1" isBold>
             sequence-ui is a React component library built using
             styled-components.
           </Text>
