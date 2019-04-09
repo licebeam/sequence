@@ -33,7 +33,7 @@ class App extends Component {
           <RowSection>
             <ColumnSection ratio={3} sectionMarginTop={20}>
               <Image imageURL={sequenceLogo} />
-              <Text textSize="1" isBold>
+              <Text isCenter textSize="1" isBold>
                 sequence-ui
               </Text>
             </ColumnSection>

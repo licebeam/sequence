@@ -6,7 +6,7 @@ import "../../base.css";
 const TextContainer = styled.div`
   display: flex;
   flex-direction: row;
-  align-self: center;
+  align-self: ${props => (props.isCenter ? "center" : "false")};
   flex: ${props => props.ratio || "1"};
   height: 100%;
   overflow: auto;
@@ -26,7 +26,8 @@ class Text extends Component {
       ratio,
       textColor,
       textSize,
-      isBold
+      isBold,
+      isCenter
     } = this.props;
     return (
       <TextContainer
@@ -36,6 +37,7 @@ class Text extends Component {
         textColor={textColor}
         textSize={textSize}
         isBold={isBold}
+        isCenter={isCenter}
       >
         {this.props.children}
       </TextContainer>

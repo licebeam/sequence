@@ -32,19 +32,34 @@ class Containers extends Component {
           </Text>
         </ColumnSectionWithHeader>
         <ColumnSection sectionPadding="10">
-          <Button noGap>Example Button</Button>
-          <SyntaxHighlighter wrapLines={true} language="html">
-            {exampleCode}
-          </SyntaxHighlighter>
-          <Button isError>Example Button</Button>
-          <SyntaxHighlighter wrapLines={true} language="html">
-            {exampleCode}
-          </SyntaxHighlighter>
+          <RowContainer backgroundColor="#DFF688">
+            <ColumnSection sectionPadding="10">
+              <Text textSize="1">
+                Containers will automatically render their children.
+              </Text>
+            </ColumnSection>
+          </RowContainer>
         </ColumnSection>
+        <ColumnSectionWithHeader
+          title="Container Components"
+          sectionMarginTop={20}
+        >
+          <Text textSize=".8" isBold>
+            <ul>
+              <li>ColumnContainer</li>
+              <SyntaxHighlighter wrapLines={true} language="html">
+                {exampleCode}
+              </SyntaxHighlighter>
+              <li>RowContainer</li>
+              <li>CenteredColumnContainer</li>
+            </ul>
+          </Text>
+        </ColumnSectionWithHeader>
         <ColumnSectionWithHeader title="Props" sectionMarginTop={20}>
-          <Text textSize="1" isBold>
-            Containers are the basic building blocks of a react application
-            using sequence-ui.
+          <Text textSize=".8" isBold>
+            <ul>
+              <li>backGroundColor</li>
+            </ul>
           </Text>
         </ColumnSectionWithHeader>
       </ColumnContainer>
