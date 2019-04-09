@@ -143,7 +143,7 @@ class App extends Component {
           </RowSection>
           <RowSection>
             <ColumnSection sectionMarginTop={20}>
-              <Text>Thanks for checking out sequence-ui</Text>
+              <Text isCenter>Thanks for checking out sequence-ui</Text>
               <RowSection>
                 <a
                   target="_blank"
