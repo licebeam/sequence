@@ -56,7 +56,7 @@ class App extends Component {
           </RowSection>
           <RowSection>
             <ColumnSection ratio={3}>
-              <ColumnSection backgroundColor="#3A8687" sectionMarginTop={20}>
+              <ColumnSection backgroundColor="#3A8687" sectionMarginTop={20} sectionHeight='60vh'>
                 <Button onClick={() => this.changePage("about")} noGap>
                   <Text isCenter textSize="1" isBold>
                     About
