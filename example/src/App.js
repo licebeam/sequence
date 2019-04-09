@@ -48,7 +48,7 @@ class App extends Component {
                 textColor="#fafafa"
                 sectionPadding="20"
               >
-                <Text textSize="1" isBold>
+                <Text isCenter textSize="1" isBold>
                   sequence-ui version 0.1.5 is currently a work in progress.
                 </Text>
               </ColumnSection>
@@ -56,8 +56,7 @@ class App extends Component {
           </RowSection>
           <RowSection>
             <ColumnSection ratio={3}>
-              <ColumnSection sectionMarginTop={20}>
-                <Text>Docs</Text>
+              <ColumnSection backgroundColor="#3A8687" sectionMarginTop={20}>
                 <Button onClick={() => this.changePage("about")} noGap>
                   About
                 </Button>
@@ -70,14 +69,13 @@ class App extends Component {
                 >
                   Getting Started
                 </Button>
-                <Text>Primitives</Text>
                 <Button onClick={() => this.changePage("containers")} noGap>
                   Containers
                 </Button>
                 <Button onClick={() => this.changePage("sections")} noGap>
                   Sections
                 </Button>
-                <Text>Basic Elements</Text>
+                <Text isCenter>Basic Elements</Text>
                 <Button onClick={() => this.changePage("text")} noGap>
                   Text
                 </Button>
@@ -87,7 +85,6 @@ class App extends Component {
                 <Button onClick={() => this.changePage("tags")} noGap>
                   Tags
                 </Button>
-                <Text>Interactables</Text>
                 <Button
                   onClick={() => this.changePage("buttons")}
                   isDisabled
