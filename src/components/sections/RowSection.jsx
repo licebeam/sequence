@@ -12,7 +12,6 @@ const FlexContainer = styled.div`
   align-content: center;
   justify-content: center;
   overflow: auto;
-  flex-shrink: 0;
   background-color: ${props => props.backgroundColor || "inherit"};
   color: ${props => props.textColor || "inherit"};
   margin-top: ${props =>
