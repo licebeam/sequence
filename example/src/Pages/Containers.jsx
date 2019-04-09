@@ -22,7 +22,7 @@ import {
 
 class Containers extends Component {
   render() {
-    const exampleCode = 'import { Button } from "sequence-ui"';
+    const exampleCode = "<RowContainer> <div>Child</div> </RowContainer>";
     return (
       <ColumnContainer>
         <ColumnSectionWithHeader title="Containers" sectionMarginTop={40}>
@@ -47,10 +47,10 @@ class Containers extends Component {
           <Text textSize=".8" isBold>
             <ul>
               <li>ColumnContainer</li>
+              <li>RowContainer</li>
               <SyntaxHighlighter wrapLines={true} language="html">
                 {exampleCode}
               </SyntaxHighlighter>
-              <li>RowContainer</li>
               <li>CenteredColumnContainer</li>
             </ul>
           </Text>
