@@ -58,60 +58,83 @@ class App extends Component {
             <ColumnSection ratio={3}>
               <ColumnSection backgroundColor="#3A8687" sectionMarginTop={20}>
                 <Button onClick={() => this.changePage("about")} noGap>
-                  About
+                  <Text isCenter textSize="1" isBold>
+                    About
+                  </Text>
                 </Button>
                 <Button onClick={() => this.changePage("installation")} noGap>
-                  Installation
+                  <Text isCenter textSize="1" isBold>
+                    Installation
+                  </Text>
                 </Button>
                 <Button
                   onClick={() => this.changePage("getting-started")}
                   noGap
                 >
-                  Getting Started
+                  <Text isCenter textSize="1" isBold>
+                    Getting Started
+                  </Text>
                 </Button>
                 <Button onClick={() => this.changePage("containers")} noGap>
-                  Containers
+                  <Text isCenter textSize="1" isBold>
+                    Containers
+                  </Text>
                 </Button>
                 <Button onClick={() => this.changePage("sections")} noGap>
-                  Sections
+                  <Text isCenter textSize="1" isBold>
+                    Sections
+                  </Text>
                 </Button>
-                <Text isCenter>Basic Elements</Text>
                 <Button onClick={() => this.changePage("text")} noGap>
-                  Text
+                  <Text isCenter textSize="1" isBold>
+                    Text
+                  </Text>
                 </Button>
                 <Button onClick={() => this.changePage("images")} noGap>
-                  Images
+                  <Text isCenter textSize="1" isBold>
+                    Images
+                  </Text>
                 </Button>
                 <Button onClick={() => this.changePage("tags")} noGap>
-                  Tags
+                  <Text isCenter textSize="1" isBold>
+                    Tags
+                  </Text>
                 </Button>
                 <Button
                   onClick={() => this.changePage("buttons")}
                   isDisabled
                   noGap
                 >
-                  Buttons
+                  <Text isCenter textSize="1" isBold>
+                    Buttons
+                  </Text>
                 </Button>
                 <Button
                   onClick={() => this.changePage("menus")}
                   isDisabled
                   noGap
                 >
-                  Menus
+                  <Text isCenter textSize="1" isBold>
+                    Menus
+                  </Text>
                 </Button>
                 <Button
                   onClick={() => this.changePage("inputs")}
                   isDisabled
                   noGap
                 >
-                  Inputs
+                  <Text isCenter textSize="1" isBold>
+                    Inputs
+                  </Text>
                 </Button>
                 <Button
                   onClick={() => this.changePage("modals")}
                   isDisabled
                   noGap
                 >
-                  Modals
+                  <Text isCenter textSize="1" isBold>
+                    Modals
+                  </Text>
                 </Button>
               </ColumnSection>
             </ColumnSection>

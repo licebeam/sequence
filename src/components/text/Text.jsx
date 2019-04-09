@@ -6,7 +6,10 @@ import "../../base.css";
 const TextContainer = styled.div`
   display: flex;
   flex-direction: row;
+  flex: 1;
   align-self: ${props => (props.isCenter ? "center" : "false")};
+  text-align: ${props => (props.isCenter ? "center" : "false")};
+  justify-content: ${props => (props.isCenter ? "center" : "false")};
   flex: ${props => props.ratio || "1"};
   height: 100%;
   overflow: auto;
