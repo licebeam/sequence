@@ -143,7 +143,7 @@ class App extends Component {
               sectionMarginLeft={40}
               sectionMarginRight={20}
             >
-              <ColumnSection ratio={4} sectionMarginTop={20}>
+              <ColumnSection ratio={4} sectionMarginTop={20} >
                 {this.state.page === "about" ? <About /> : null}
                 {this.state.page === "installation" ? <Installation /> : null}
                 {this.state.page === "getting-started" ? (
