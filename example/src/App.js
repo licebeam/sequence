@@ -13,6 +13,7 @@ import About from "./Pages/About";
 import Installation from "./Pages/Installation";
 import GettingStarted from "./Pages/GettingStarted";
 import Construction from "./Pages/Construction";
+import Containers from "./Pages/Containers";
 
 class App extends Component {
   state = { modalOpen: false, page: "about" };
@@ -128,7 +129,7 @@ class App extends Component {
                 {this.state.page === "getting-started" ? (
                   <GettingStarted />
                 ) : null}
-                {this.state.page === "containers" ? <Construction /> : null}
+                {this.state.page === "containers" ? <Containers /> : null}
                 {this.state.page === "sections" ? <Construction /> : null}
                 {this.state.page === "text" ? <Construction /> : null}
                 {this.state.page === "images" ? <Construction /> : null}
