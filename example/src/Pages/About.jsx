@@ -22,11 +22,18 @@ class About extends Component {
             styled-components.
           </Text>
         </ColumnSection>
-        <ColumnSectionWithHeader title="Why" sectionMarginTop={40}>
-          <Text textSize="1" isBold>
-            The goal of sequence-ui is to Modularize components down to
-            primitives and basic elements allowing developers to quickly build
-            compound components.
+        <ColumnSectionWithHeader title="Why" sectionMarginTop="20">
+          <ColumnSection sectionMarginBottom="20">
+            <Text textSize="1">
+              The goal of sequence-ui is to modularize components down to
+              primitives and basic elements allowing developers to quickly build
+              compounds.
+            </Text>
+          </ColumnSection>
+          <Text textSize="1">
+            All of the components in sequence-ui are built utilizing flex-box.
+            This allows the compound components you build to remain mobile
+            friendly.
           </Text>
           <SyntaxHighlighter wrapLines={true} language="html">
             {exampleCode}

@@ -40,7 +40,18 @@ class App extends Component {
               ratio={6}
               sectionMarginLeft={40}
               sectionMarginRight={20}
-            />
+            >
+              <ColumnSection
+                sectionMarginTop={20}
+                backgroundColor="#E54A26"
+                textColor="#fafafa"
+                sectionPadding="20"
+              >
+                <Text textSize="1" isBold>
+                  sequence-ui version 0.1.5 is currently a work in progress.
+                </Text>
+              </ColumnSection>
+            </ColumnSection>
           </RowSection>
           <RowSection>
             <ColumnSection ratio={3}>
