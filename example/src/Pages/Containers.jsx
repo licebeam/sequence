@@ -58,7 +58,7 @@ class Containers extends Component {
         <ColumnSectionWithHeader title="Props" sectionMarginTop={20}>
           <Text textSize=".8" isBold>
             <ul>
-              <li>backGroundColor</li>
+              <li>backgroundColor</li>
             </ul>
           </Text>
         </ColumnSectionWithHeader>
