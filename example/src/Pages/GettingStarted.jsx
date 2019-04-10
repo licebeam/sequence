@@ -31,6 +31,9 @@ class GettingStarted extends Component {
                 {exampleCode2}
               </SyntaxHighlighter>
             </Text>
+            <Text textSize="1">
+              Heres a simple example of a compound component!
+            </Text>
             <Text isCenter>
               <SyntaxHighlighter style={hopscotch} language="jsx">
                 {exampleCode}

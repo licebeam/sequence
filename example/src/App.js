@@ -7,7 +7,7 @@ import {
   Button,
   Container,
   RowSection,
-  ColumnSection
+  Section
 } from "sequence-ui";
 import About from "./Pages/About";
 import Installation from "./Pages/Installation";
@@ -31,24 +31,24 @@ class App extends Component {
       <div className="App">
         <Container bodyWidth="70%">
           <RowSection sectionHeight="20vh">
-            <ColumnSection ratio={3}>
+            <Section isColumn ratio={3}>
               <Image imageURL={sequenceLogo} />
               <Text isCenter textSize="1" isBold>
                 sequence-ui
               </Text>
-            </ColumnSection>
-            <ColumnSection ratio={6}>
-              <ColumnSection backgroundColor="#E54A26" textColor="#fafafa">
+            </Section>
+            <Section isColumn ratio={6}>
+              <Section isColumn backgroundColor="#E54A26" textColor="#fafafa">
                 <Text isCenter textSize=".8" isBold>
                   sequence-ui version 0.1.5 is currently a work in progress.
                 </Text>
-              </ColumnSection>
-              <ColumnSection textColor="#fafafa" />
-            </ColumnSection>
+              </Section>
+              <Section isColumn textColor="#fafafa" />
+            </Section>
           </RowSection>
           <RowSection sectionHeight="70vh">
-            <ColumnSection ratio={3}>
-              <ColumnSection backgroundColor="#3A8687">
+            <Section isColumn ratio={3}>
+              <Section isColumn backgroundColor="#3A8687">
                 <Button onClick={() => this.changePage("about")} noGap>
                   <Text isCenter textSize="1" isBold>
                     About
@@ -128,10 +128,10 @@ class App extends Component {
                     Modals
                   </Text>
                 </Button>
-              </ColumnSection>
-            </ColumnSection>
-            <ColumnSection ratio={6}>
-              <ColumnSection>
+              </Section>
+            </Section>
+            <Section isColumn ratio={6}>
+              <Section isColumn>
                 {this.state.page === "about" ? <About /> : null}
                 {this.state.page === "installation" ? <Installation /> : null}
                 {this.state.page === "getting-started" ? (
@@ -146,11 +146,11 @@ class App extends Component {
                 {this.state.page === "menus" ? <Construction /> : null}
                 {this.state.page === "inputs" ? <Construction /> : null}
                 {this.state.page === "modals" ? <Construction /> : null}
-              </ColumnSection>
-            </ColumnSection>
+              </Section>
+            </Section>
           </RowSection>
           <RowSection sectionHeight="10vh">
-            <ColumnSection>
+            <Section isColumn>
               <RowSection>
                 <Text isCenter>
                   <a
@@ -176,7 +176,7 @@ class App extends Component {
                   </a>
                 </Text>
               </RowSection>
-            </ColumnSection>
+            </Section>
           </RowSection>
         </Container>
       </div>
