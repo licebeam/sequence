@@ -10,7 +10,8 @@ import {
 
 class GettingStarted extends Component {
   render() {
-    const exampleCode = '<Text textSize="1" isBold> My Cool Text </Text>';
+    const exampleCode =
+      '<Container><Section type="row"><Text textSize="1" isBold> My Cool Text </Text></Section></Container>';
     return (
       <Fragment>
         <ColumnSection>
@@ -24,11 +25,6 @@ class GettingStarted extends Component {
               The goal of sequence-ui is to modularize components down to
               primitives and basic elements allowing developers to quickly build
               compounds.
-            </Text>
-            <Text textSize="1">
-              All of the components in sequence-ui are built utilizing flex-box.
-              This allows the compound components you build to remain mobile
-              friendly.
             </Text>
             <Text isCenter>
               <SyntaxHighlighter style={hopscotch} language="jsx">
