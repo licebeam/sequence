@@ -13,28 +13,21 @@ class About extends Component {
             sequence-ui is a React component library built using
             styled-components.
           </Text>
+          <ColumnSectionWithHeader title="Why">
+            <Text textSize="1">
+              The goal of sequence-ui is to modularize components down to
+              primitives and basic elements allowing developers to quickly build
+              compounds. All of the components in sequence-ui are built
+              utilizing flex-box. This allows the compound components you build
+              to remain mobile friendly.
+            </Text>
+            <Text>
+              <SyntaxHighlighter style={hopscotch} language="jsx">
+                {exampleCode}
+              </SyntaxHighlighter>
+            </Text>
+          </ColumnSectionWithHeader>
         </ColumnSection>
-        <ColumnSectionWithHeader title="Why">
-          <ColumnSection>
-            <Text textSize="1">
-              The goal of sequence-ui is to modularize components down to
-              primitives and basic elements allowing developers to quickly build
-              compounds. All of the components in sequence-ui are built
-              utilizing flex-box. This allows the compound components you build
-              to remain mobile friendly.
-            </Text>
-            <Text textSize="1">
-              The goal of sequence-ui is to modularize components down to
-              primitives and basic elements allowing developers to quickly build
-              compounds. All of the components in sequence-ui are built
-              utilizing flex-box. This allows the compound components you build
-              to remain mobile friendly.
-            </Text>
-            <SyntaxHighlighter style={hopscotch} language="jsx">
-              {exampleCode}
-            </SyntaxHighlighter>
-          </ColumnSection>
-        </ColumnSectionWithHeader>
       </Fragment>
     );
   }
