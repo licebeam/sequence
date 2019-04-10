@@ -5,10 +5,12 @@ import "../../base.css";
 
 const TextContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-self: ${props => (props.isCenter ? "center" : "false")};
   text-align: ${props => (props.isCenter ? "center" : "false")};
   justify-content: ${props => (props.isCenter ? "center" : "false")};
+  height: 100%;
+  width: 100%;
   flex: ${props => props.ratio || "1"};
   font-size: ${props => (props.textSize ? props.textSize + "rem" : ".8rem")};
   font-weight: ${props => (props.isBold ? "bold" : "normal")};
