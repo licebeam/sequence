@@ -27,7 +27,12 @@ class Installation extends Component {
     const exampleCode2 = "npm install --save sequence-ui";
     return (
       <Fragment>
-        <ColumnSectionWithHeader title="Installation">
+        <ColumnSectionWithHeader
+          title="Installation"
+          ratio="false"
+          sectionMarginLeft="20"
+          sectionMarginRight="20"
+        >
           <Text textSize="1" isBold>
             Installing sequence-ui is very easy! In your project run either of
             the following commands in the terminal.
