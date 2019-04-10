@@ -14,7 +14,12 @@ class About extends Component {
     return (
       <Fragment>
         <ColumnSection>
-          <ColumnSectionWithHeader title="About">
+          <ColumnSectionWithHeader
+            title="About"
+            ratio="false"
+            sectionMarginLeft="20"
+            sectionMarginRight="20"
+          >
             <FillSection textColor="#000" sectionHeight="40px">
               <Text isCenter textSize=".6" isBold>
                 sequence-ui is a React component library built using
@@ -24,9 +29,12 @@ class About extends Component {
             <Text textSize="1">
               The goal of sequence-ui is to modularize components down to
               primitives and basic elements allowing developers to quickly build
-              compounds. All of the components in sequence-ui are built
-              utilizing flex-box. This allows the compound components you build
-              to remain mobile friendly.
+              compounds.
+            </Text>
+            <Text textSize="1">
+              All of the components in sequence-ui are built utilizing flex-box.
+              This allows the compound components you build to remain mobile
+              friendly.
             </Text>
             <Text isCenter>
               <SyntaxHighlighter style={hopscotch} language="jsx">
