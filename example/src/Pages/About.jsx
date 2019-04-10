@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
-import SyntaxHighlighter from "react-syntax-highlighter";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { hopscotch } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Text, ColumnSectionWithHeader, ColumnSection } from "sequence-ui";
 
 class About extends Component {
@@ -26,10 +27,10 @@ class About extends Component {
             This allows the compound components you build to remain mobile
             friendly.
           </Text>
-          {/* <SyntaxHighlighter wrapLines={true} language="html">
-            {exampleCode}
-          </SyntaxHighlighter> */}
         </ColumnSectionWithHeader>
+        <SyntaxHighlighter style={hopscotch} language="jsx">
+          {exampleCode}
+        </SyntaxHighlighter>
       </Fragment>
     );
   }
