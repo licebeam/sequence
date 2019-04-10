@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
-import SyntaxHighlighter from "react-syntax-highlighter";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { hopscotch } from "react-syntax-highlighter/dist/esm/styles/prism";
 import {
   DropDown,
   Tag,
@@ -31,10 +32,10 @@ class Installation extends Component {
             Installing sequence-ui is very easy! In your project run either of
             the following commands in the terminal.
           </Text>
-          <SyntaxHighlighter wrapLines={true} language="bash">
+          <SyntaxHighlighter style={hopscotch} wrapLines={true} language="bash">
             {exampleCode}
           </SyntaxHighlighter>
-          <SyntaxHighlighter wrapLines={true} language="bash">
+          <SyntaxHighlighter style={hopscotch} wrapLines={true} language="bash">
             {exampleCode2}
           </SyntaxHighlighter>
         </ColumnSectionWithHeader>
