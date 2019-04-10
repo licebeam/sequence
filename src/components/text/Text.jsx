@@ -6,12 +6,10 @@ import "../../base.css";
 const TextContainer = styled.div`
   display: flex;
   flex-direction: row;
-  flex: 1;
   align-self: ${props => (props.isCenter ? "center" : "false")};
   text-align: ${props => (props.isCenter ? "center" : "false")};
   justify-content: ${props => (props.isCenter ? "center" : "false")};
   flex: ${props => props.ratio || "1"};
-  height: 100%;
   font-size: ${props => (props.textSize ? props.textSize + "rem" : ".8rem")};
   font-weight: ${props => (props.isBold ? "bold" : "normal")};
   background-color: ${props => props.backgroundColor || "inherit"};

@@ -55,8 +55,8 @@ class App extends Component {
               />
             </ColumnSection>
           </RowSection>
-          <RowSection sectionHeight="70vh" backgroundColor="orange">
-            <ColumnSection backgroundColor="green" ratio={3}>
+          <RowSection sectionHeight="70vh">
+            <ColumnSection ratio={3}>
               <ColumnSection backgroundColor="#3A8687">
                 <Button onClick={() => this.changePage("about")} noGap>
                   <Text isCenter textSize="1" isBold>
@@ -160,8 +160,10 @@ class App extends Component {
           </RowSection>
           <RowSection sectionHeight="10vh">
             <ColumnSection>
-              <Text isCenter>Thanks for checking out sequence-ui</Text>
-              <RowSection>
+              <Text ratio="1" isCenter>
+                Thanks for checking out sequence-ui
+              </Text>
+              <RowSection ratio="2">
                 <Text isCenter>
                   <a
                     target="_blank"
