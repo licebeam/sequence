@@ -31,28 +31,19 @@ class App extends Component {
       <div className="App">
         <CenteredColumnContainer>
           <RowSection sectionHeight="20vh">
-            <ColumnSection ratio={3} sectionMarginTop="20">
+            <ColumnSection ratio={3}>
               <Image imageURL={sequenceLogo} />
               <Text isCenter textSize="1" isBold>
                 sequence-ui
               </Text>
             </ColumnSection>
             <ColumnSection ratio={6}>
-              <ColumnSection
-                backgroundColor="#E54A26"
-                textColor="#fafafa"
-                sectionMarginTop="20"
-                sectionPadding="20"
-              >
+              <ColumnSection backgroundColor="#E54A26" textColor="#fafafa">
                 <Text isCenter textSize=".8" isBold>
                   sequence-ui version 0.1.5 is currently a work in progress.
                 </Text>
               </ColumnSection>
-              <ColumnSection
-                textColor="#fafafa"
-                sectionMarginTop="20"
-                sectionPadding="20"
-              />
+              <ColumnSection textColor="#fafafa" />
             </ColumnSection>
           </RowSection>
           <RowSection sectionHeight="70vh">
