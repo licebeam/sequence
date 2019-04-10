@@ -5,7 +5,7 @@ import "../../base.css";
 
 const TextContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-self: ${props => (props.isCenter ? "center" : "false")};
   text-align: ${props => (props.isCenter ? "center" : "false")};
   justify-content: ${props => (props.isCenter ? "center" : "false")};

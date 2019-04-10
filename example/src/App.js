@@ -151,10 +151,7 @@ class App extends Component {
           </RowSection>
           <RowSection sectionHeight="10vh">
             <ColumnSection>
-              <Text ratio="1" isCenter>
-                Thanks for checking out sequence-ui
-              </Text>
-              <RowSection ratio="2">
+              <RowSection>
                 <Text isCenter>
                   <a
                     target="_blank"
