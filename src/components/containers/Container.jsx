@@ -5,7 +5,7 @@ import "../../base.css";
 
 const FlexContainer = styled.div`
   margin: 0 auto;
-  width: ${props => props.bodyWidth || "70%"};
+  width: ${props => props.bodyWidth || "100vw"};
   height: 100vh;
   overflow: hidden;
   background-color: ${props =>
@@ -15,7 +15,7 @@ const FlexContainer = styled.div`
   }
 `;
 
-class CenteredColumnContainer extends Component {
+class Container extends Component {
   render() {
     const { backgroundColor, bodyWidth } = this.props;
     return (
@@ -26,4 +26,4 @@ class CenteredColumnContainer extends Component {
   }
 }
 
-export default CenteredColumnContainer;
+export default Container;

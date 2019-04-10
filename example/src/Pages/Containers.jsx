@@ -1,68 +1,49 @@
-import React, { Component } from "react";
-import SyntaxHighlighter from "react-syntax-highlighter";
+import React, { Component, Fragment } from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { hopscotch } from "react-syntax-highlighter/dist/esm/styles/prism";
 import {
-  DropDown,
-  Tag,
-  Modal,
-  ImageCircle,
-  Image,
   Text,
-  Button,
-  CenteredColumnContainer,
-  RowSection,
-  Card,
   ColumnSectionWithHeader,
   ColumnSection,
-  CardWithHeader,
-  Input,
-  RowSectionWithHeader,
-  RowContainer,
-  ColumnContainer
+  FillSection
 } from "sequence-ui";
 
 class Containers extends Component {
   render() {
-    const exampleCode = "<RowContainer> <div>Child</div> </RowContainer>";
+    const exampleCode = '<Text textSize="1" isBold> My Cool Text </Text>';
     return (
-      <ColumnContainer>
-        <ColumnSectionWithHeader title="Containers" sectionMarginTop={40}>
-          <Text textSize="1" isBold>
-            Containers are the basic building blocks of a react application
-            using sequence-ui.
-          </Text>
-        </ColumnSectionWithHeader>
-        <ColumnSection sectionPadding="10">
-          <RowContainer backgroundColor="#DFF688">
-            <ColumnSection sectionPadding="10">
-              <Text textSize="1">
-                Containers will automatically render their children.
+      <Fragment>
+        <ColumnSection>
+          <ColumnSectionWithHeader
+            title="Containers"
+            ratio="false"
+            sectionMarginLeft="20"
+            sectionMarginRight="20"
+          >
+            <FillSection textColor="#000" sectionHeight="40px">
+              <Text isCenter textSize=".6" isBold>
+                sequence-ui is a React component library built using
+                styled-components.
               </Text>
-            </ColumnSection>
-          </RowContainer>
-        </ColumnSection>
-        <ColumnSectionWithHeader
-          title="Container Components"
-          sectionMarginTop={20}
-        >
-          <Text textSize=".8" isBold>
-            <ul>
-              <li>ColumnContainer</li>
-              <li>RowContainer</li>
-              <SyntaxHighlighter wrapLines={true} language="html">
+            </FillSection>
+            <Text textSize="1">
+              The goal of sequence-ui is to modularize components down to
+              primitives and basic elements allowing developers to quickly build
+              compounds.
+            </Text>
+            <Text textSize="1">
+              All of the components in sequence-ui are built utilizing flex-box.
+              This allows the compound components you build to remain mobile
+              friendly.
+            </Text>
+            <Text isCenter>
+              <SyntaxHighlighter style={hopscotch} language="jsx">
                 {exampleCode}
               </SyntaxHighlighter>
-              <li>CenteredColumnContainer</li>
-            </ul>
-          </Text>
-        </ColumnSectionWithHeader>
-        <ColumnSectionWithHeader title="Props" sectionMarginTop={20}>
-          <Text textSize=".8" isBold>
-            <ul>
-              <li>backgroundColor</li>
-            </ul>
-          </Text>
-        </ColumnSectionWithHeader>
-      </ColumnContainer>
+            </Text>
+          </ColumnSectionWithHeader>
+        </ColumnSection>
+      </Fragment>
     );
   }
 }

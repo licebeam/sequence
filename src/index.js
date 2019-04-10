@@ -1,7 +1,5 @@
 //Containers
-import CenteredColumnContainer from "./components/containers/CenteredColumnContainer.jsx";
-import ColumnContainer from "./components/containers/ColumnContainer.jsx";
-import RowContainer from "./components/containers/RowContainer.jsx";
+import Container from "./components/containers/Container.jsx";
 //Sections
 import ColumnSection from "./components/sections/ColumnSection.jsx";
 import ColumnSectionWithHeader from "./components/sections/ColumnSectionWithHeader.jsx";
@@ -29,9 +27,7 @@ import Text from "./components/text/Text.jsx";
 
 export {
   //Containers
-  CenteredColumnContainer,
-  ColumnContainer,
-  RowContainer,
+  Container,
   //Sections
   ColumnSection,
   ColumnSectionWithHeader,

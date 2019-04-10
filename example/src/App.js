@@ -5,7 +5,7 @@ import {
   Image,
   Text,
   Button,
-  CenteredColumnContainer,
+  Container,
   RowSection,
   ColumnSection
 } from "sequence-ui";
@@ -29,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CenteredColumnContainer>
+        <Container bodyWidth="70%">
           <RowSection sectionHeight="20vh">
             <ColumnSection ratio={3}>
               <Image imageURL={sequenceLogo} />
@@ -178,7 +178,7 @@ class App extends Component {
               </RowSection>
             </ColumnSection>
           </RowSection>
-        </CenteredColumnContainer>
+        </Container>
       </div>
     );
   }
