@@ -9,6 +9,7 @@ const FlexContainer = styled.div`
   flex: ${props => props.ratio || "1"};
   height: ${props => props.sectionHeight || "false"};
   width: ${props => props.sectionWidth || "false"};
+  overflow: ${props => props.overlow || "hidden"};
   padding: ${props =>
     props.sectionPadding ? props.sectionPadding + "px" : "0px"};
   margin-top: ${props =>
@@ -28,6 +29,7 @@ class ColumnSection extends Component {
     const {
       sectionHeight,
       sectionWidth,
+      overflow,
       backgroundColor,
       ratio,
       sectionMarginTop,
@@ -42,6 +44,7 @@ class ColumnSection extends Component {
         sectionHeight={sectionHeight}
         sectionWidth={sectionWidth}
         backgroundColor={backgroundColor}
+        overflow={overflow}
         ratio={ratio}
         sectionMarginTop={sectionMarginTop}
         sectionMarginBottom={sectionMarginBottom}
