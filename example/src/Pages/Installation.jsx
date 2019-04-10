@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import {
   DropDown,
@@ -25,8 +25,8 @@ class Installation extends Component {
     const exampleCode = "yarn add sequence-ui";
     const exampleCode2 = "npm install --save sequence-ui";
     return (
-      <ColumnContainer>
-        <ColumnSectionWithHeader title="Installation" sectionMarginTop={40}>
+      <Fragment>
+        <ColumnSectionWithHeader title="Installation">
           <Text textSize="1" isBold>
             Installing sequence-ui is very easy! In your project run either of
             the following commands in the terminal.
@@ -38,7 +38,7 @@ class Installation extends Component {
             {exampleCode2}
           </SyntaxHighlighter>
         </ColumnSectionWithHeader>
-      </ColumnContainer>
+      </Fragment>
     );
   }
 }

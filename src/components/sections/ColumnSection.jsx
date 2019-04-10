@@ -7,7 +7,7 @@ const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: ${props => props.ratio || "1"};
-  height: ${props => props.sectionHeight || "100%"};
+  height: ${props => props.sectionHeight || "false"};
   width: ${props => props.sectionWidth || "false"};
   padding: ${props =>
     props.sectionPadding ? props.sectionPadding + "px" : "0px"};

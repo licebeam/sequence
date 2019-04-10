@@ -7,7 +7,7 @@ const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex: ${props => props.ratio || "1"};
-  height: ${props => props.sectionHeight || "100%"};
+  height: ${props => props.sectionHeight || "false"};
   width: ${props => props.sectionWidth || "false"};
   overflow: auto;
   background-color: ${props => props.backgroundColor || "inherit"};

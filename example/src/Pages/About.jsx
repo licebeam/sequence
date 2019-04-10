@@ -26,9 +26,9 @@ class About extends Component {
             This allows the compound components you build to remain mobile
             friendly.
           </Text>
-          <SyntaxHighlighter wrapLines={true} language="html">
+          {/* <SyntaxHighlighter wrapLines={true} language="html">
             {exampleCode}
-          </SyntaxHighlighter>
+          </SyntaxHighlighter> */}
         </ColumnSectionWithHeader>
       </Fragment>
     );
