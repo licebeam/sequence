@@ -4,10 +4,10 @@ import { colors } from "../../constants";
 import "../../base.css";
 
 const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   width: ${props => props.bodyWidth || "70%"};
+  height: 100vh;
+  overflow: hidden;
   background-color: ${props =>
     props.backgroundColor || colors.defaultContainerColor};
   @media only screen and (max-width: 768px) {

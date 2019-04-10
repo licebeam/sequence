@@ -7,9 +7,8 @@ const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: ${props => props.ratio || "1"};
-  height: ${props => props.sectionHeight || '100%'};
-  width: ${props => props.sectionWidth || 'false'};
-  overflow: auto;
+  height: ${props => props.sectionHeight || "100%"};
+  width: ${props => props.sectionWidth || "false"};
   background-color: ${props => props.backgroundColor || "inherit"};
   margin-top: ${props =>
     props.sectionMarginTop ? props.sectionMarginTop + "px" : "0px"};

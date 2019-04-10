@@ -7,10 +7,8 @@ const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex: ${props => props.ratio || "1"};
-  height: ${props => props.sectionHeight || '100%'};
-  width: ${props => props.sectionWidth || 'false'};
-  align-content: center;
-  justify-content: center;
+  height: ${props => props.sectionHeight || "100%"};
+  width: ${props => props.sectionWidth || "false"};
   overflow: auto;
   background-color: ${props => props.backgroundColor || "inherit"};
   color: ${props => props.textColor || "inherit"};

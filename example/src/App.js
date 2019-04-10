@@ -30,33 +30,24 @@ class App extends Component {
     return (
       <div className="App">
         <CenteredColumnContainer>
-          <RowSection>
-            <ColumnSection ratio={3} sectionMarginTop={20}>
+          <RowSection sectionHeight="20vh">
+            <ColumnSection ratio={3}>
               <Image imageURL={sequenceLogo} />
               <Text isCenter textSize="1" isBold>
                 sequence-ui
               </Text>
             </ColumnSection>
-            <ColumnSection
-              ratio={6}
-              sectionMarginLeft={40}
-              sectionMarginRight={20}
-            >
-              <ColumnSection
-                sectionMarginTop={20}
-                backgroundColor="#E54A26"
-                textColor="#fafafa"
-                sectionPadding="20"
-              >
+            <ColumnSection ratio={6}>
+              <ColumnSection backgroundColor="#E54A26" textColor="#fafafa">
                 <Text isCenter textSize="1" isBold>
                   sequence-ui version 0.1.5 is currently a work in progress.
                 </Text>
               </ColumnSection>
             </ColumnSection>
           </RowSection>
-          <RowSection>
-            <ColumnSection ratio={3}>
-              <ColumnSection backgroundColor="#3A8687" sectionMarginTop={20} sectionHeight='60vh'>
+          <RowSection sectionHeight="70vh" backgroundColor="orange">
+            <ColumnSection backgroundColor="green" ratio={3}>
+              <ColumnSection backgroundColor="#3A8687">
                 <Button onClick={() => this.changePage("about")} noGap>
                   <Text isCenter textSize="1" isBold>
                     About
@@ -138,12 +129,8 @@ class App extends Component {
                 </Button>
               </ColumnSection>
             </ColumnSection>
-            <ColumnSection
-              ratio={6}
-              sectionMarginLeft={40}
-              sectionMarginRight={20}
-            >
-              <ColumnSection ratio={4} sectionMarginTop={20} >
+            <ColumnSection ratio={6}>
+              <ColumnSection>
                 {this.state.page === "about" ? <About /> : null}
                 {this.state.page === "installation" ? <Installation /> : null}
                 {this.state.page === "getting-started" ? (
@@ -161,8 +148,8 @@ class App extends Component {
               </ColumnSection>
             </ColumnSection>
           </RowSection>
-          <RowSection>
-            <ColumnSection sectionMarginTop={20}>
+          <RowSection sectionHeight="10vh">
+            <ColumnSection>
               <Text isCenter>Thanks for checking out sequence-ui</Text>
               <RowSection>
                 <a

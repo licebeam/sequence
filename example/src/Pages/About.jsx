@@ -1,29 +1,20 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import {
-  Text,
-  ColumnContainer,
-  ColumnSectionWithHeader,
-  ColumnSection
-} from "sequence-ui";
+import { Text, ColumnSectionWithHeader, ColumnSection } from "sequence-ui";
 
 class About extends Component {
   render() {
     const exampleCode = '<Text textSize="1" isBold> My Cool Text </Text>';
     return (
-      <ColumnContainer>
-        <ColumnSection
-          backgroundColor="#3A8687"
-          textColor="#fafafa"
-          sectionPadding="20"
-        >
+      <Fragment>
+        <ColumnSection backgroundColor="#3A8687" textColor="#fafafa">
           <Text isCenter textSize="1" isBold>
             sequence-ui is a React component library built using
             styled-components.
           </Text>
         </ColumnSection>
-        <ColumnSectionWithHeader title="Why" sectionMarginTop="20">
-          <ColumnSection sectionMarginBottom="20">
+        <ColumnSectionWithHeader title="Why">
+          <ColumnSection>
             <Text textSize="1">
               The goal of sequence-ui is to modularize components down to
               primitives and basic elements allowing developers to quickly build
@@ -39,7 +30,7 @@ class About extends Component {
             {exampleCode}
           </SyntaxHighlighter>
         </ColumnSectionWithHeader>
-      </ColumnContainer>
+      </Fragment>
     );
   }
 }

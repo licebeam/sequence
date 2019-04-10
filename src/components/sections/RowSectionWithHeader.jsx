@@ -7,7 +7,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex: ${props => props.ratio || "1"};
-  height: 100%;
   align-content: center;
   justify-content: center;
   background-color: ${props => props.backgroundColor || "inherit"};
