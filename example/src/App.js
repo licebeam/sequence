@@ -31,18 +31,28 @@ class App extends Component {
       <div className="App">
         <CenteredColumnContainer>
           <RowSection sectionHeight="20vh">
-            <ColumnSection ratio={3}>
+            <ColumnSection ratio={3} sectionMarginTop="20">
               <Image imageURL={sequenceLogo} />
               <Text isCenter textSize="1" isBold>
                 sequence-ui
               </Text>
             </ColumnSection>
             <ColumnSection ratio={6}>
-              <ColumnSection backgroundColor="#E54A26" textColor="#fafafa">
-                <Text isCenter textSize="1" isBold>
+              <ColumnSection
+                backgroundColor="#E54A26"
+                textColor="#fafafa"
+                sectionMarginTop="20"
+                sectionPadding="20"
+              >
+                <Text isCenter textSize=".8" isBold>
                   sequence-ui version 0.1.5 is currently a work in progress.
                 </Text>
               </ColumnSection>
+              <ColumnSection
+                textColor="#fafafa"
+                sectionMarginTop="20"
+                sectionPadding="20"
+              />
             </ColumnSection>
           </RowSection>
           <RowSection sectionHeight="70vh" backgroundColor="orange">
@@ -152,27 +162,29 @@ class App extends Component {
             <ColumnSection>
               <Text isCenter>Thanks for checking out sequence-ui</Text>
               <RowSection>
-                <a
-                  target="_blank"
-                  className="page-link"
-                  href="https://github.com/licebeam/sequence"
-                >
-                  Github Repo
-                </a>
-                <a
-                  target="_blank"
-                  className="page-link"
-                  href="https://www.npmjs.com/package/sequence-ui"
-                >
-                  NPM
-                </a>
-                <a
-                  target="_blank"
-                  className="page-link"
-                  href="https://bundlephobia.com/result?p=sequence-ui@0.1.3"
-                >
-                  Bundle Phobia
-                </a>
+                <Text isCenter>
+                  <a
+                    target="_blank"
+                    className="page-link"
+                    href="https://github.com/licebeam/sequence"
+                  >
+                    Github Repo
+                  </a>
+                  <a
+                    target="_blank"
+                    className="page-link"
+                    href="https://www.npmjs.com/package/sequence-ui"
+                  >
+                    NPM
+                  </a>
+                  <a
+                    target="_blank"
+                    className="page-link"
+                    href="https://bundlephobia.com/result?p=sequence-ui@0.1.3"
+                  >
+                    Bundle Phobia
+                  </a>
+                </Text>
               </RowSection>
             </ColumnSection>
           </RowSection>
