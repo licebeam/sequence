@@ -12,6 +12,7 @@ class GettingStarted extends Component {
   render() {
     const exampleCode =
       '<Container><Section type="row"><Text textSize="1" isBold> My Cool Text </Text></Section></Container>';
+    const exampleCode2 = 'import { Button } from "sequence-ui"';
     return (
       <Fragment>
         <ColumnSection>
@@ -22,9 +23,13 @@ class GettingStarted extends Component {
             sectionMarginRight="20"
           >
             <Text textSize="1">
-              The goal of sequence-ui is to modularize components down to
-              primitives and basic elements allowing developers to quickly build
-              compounds.
+              Getting started is as simple as importing the component you want
+              to use from sequence-ui.
+            </Text>
+            <Text isCenter>
+              <SyntaxHighlighter style={hopscotch} language="jsx">
+                {exampleCode2}
+              </SyntaxHighlighter>
             </Text>
             <Text isCenter>
               <SyntaxHighlighter style={hopscotch} language="jsx">
