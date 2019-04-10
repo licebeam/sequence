@@ -7,6 +7,7 @@ import ColumnSection from "./components/sections/ColumnSection.jsx";
 import ColumnSectionWithHeader from "./components/sections/ColumnSectionWithHeader.jsx";
 import RowSection from "./components/sections/RowSection.jsx";
 import RowSectionWithHeader from "./components/sections/RowSectionWithHeader.jsx";
+import FillSection from "./components/sections/FillSection.jsx";
 //Cards
 import Card from "./components/cards/Card.jsx";
 import CardWithHeader from "./components/cards/CardWithHeader.jsx";
@@ -36,6 +37,7 @@ export {
   ColumnSectionWithHeader,
   RowSection,
   RowSectionWithHeader,
+  FillSection,
   //Cards
   Card,
   CardWithHeader,
