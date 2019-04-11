@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import { ColumnSection, Text } from "sequence-ui";
+import { Section, Text } from "sequence-ui";
 
 class Construction extends Component {
   render() {
     return (
-      <ColumnSection>
+      <Section isColumn>
         <Text isBold textColor="#ffb300">
           This page is currently under construction.{" "}
         </Text>
-      </ColumnSection>
+      </Section>
     );
   }
 }
