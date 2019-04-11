@@ -5,11 +5,11 @@ import "../../base.css";
 
 const FlexContainer = styled.div`
   display: flex;
-  flex-direction: column;
   overflow: auto;
+  flex-direction: ${props => (props.isColumn ? "column" : "row")}
   flex: ${props => props.ratio || "1"};
   height: ${props => props.sectionHeight || "100%"};
-  width: ${props => props.sectionWidth || "false"};
+  width: ${props => props.sectionWidth || "100%"};
   padding: ${props =>
     props.sectionPadding ? props.sectionPadding + "px" : "0px"};
   margin-top: ${props =>
@@ -42,6 +42,7 @@ class ColumnSectionWithHeader extends Component {
       backgroundColor,
       headerColor,
       titleColor,
+      textColor,
       ratio,
       sectionMarginTop,
       sectionMarginBottom,
@@ -54,6 +55,7 @@ class ColumnSectionWithHeader extends Component {
         sectionHeight={sectionHeight}
         sectionWidth={sectionWidth}
         backgroundColor={backgroundColor}
+        textColor={textColor}
         ratio={ratio}
         sectionMarginTop={sectionMarginTop}
         sectionMarginBottom={sectionMarginBottom}
@@ -66,7 +68,7 @@ class ColumnSectionWithHeader extends Component {
             {title || false}
           </Header>
         ) : null}
-        <FlexContainer>{this.props.children}</FlexContainer>
+        <FlexContainer isColumn={isColumn}>{this.props.children}</FlexContainer>
       </FlexContainer>
     );
   }

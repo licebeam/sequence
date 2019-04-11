@@ -1,14 +1,7 @@
 import React, { Component } from "react";
 import "./index.css";
 import sequenceLogo from "./images/sequence-ui-logo.gif";
-import {
-  Image,
-  Text,
-  Button,
-  Container,
-  RowSection,
-  Section
-} from "sequence-ui";
+import { Image, Text, Button, Container, Section } from "sequence-ui";
 import About from "./Pages/About";
 import Installation from "./Pages/Installation";
 import GettingStarted from "./Pages/GettingStarted";
@@ -30,7 +23,7 @@ class App extends Component {
     return (
       <div className="App">
         <Container bodyWidth="70%">
-          <RowSection sectionHeight="20vh">
+          <Section sectionHeight="20vh">
             <Section isColumn ratio={3}>
               <Image imageURL={sequenceLogo} />
               <Text isCenter textSize="1" isBold>
@@ -45,8 +38,8 @@ class App extends Component {
               </Section>
               <Section isColumn textColor="#fafafa" />
             </Section>
-          </RowSection>
-          <RowSection sectionHeight="70vh">
+          </Section>
+          <Section sectionHeight="70vh">
             <Section isColumn ratio={3}>
               <Section isColumn backgroundColor="#3A8687">
                 <Button onClick={() => this.changePage("about")} noGap>
@@ -148,10 +141,10 @@ class App extends Component {
                 {this.state.page === "modals" ? <Construction /> : null}
               </Section>
             </Section>
-          </RowSection>
-          <RowSection sectionHeight="10vh">
+          </Section>
+          <Section sectionHeight="10vh">
             <Section isColumn>
-              <RowSection>
+              <Section>
                 <Text isCenter>
                   <a
                     target="_blank"
@@ -175,9 +168,9 @@ class App extends Component {
                     Bundle Phobia
                   </a>
                 </Text>
-              </RowSection>
+              </Section>
             </Section>
-          </RowSection>
+          </Section>
         </Container>
       </div>
     );
