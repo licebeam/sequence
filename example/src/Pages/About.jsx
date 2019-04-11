@@ -17,7 +17,7 @@ class About extends Component {
         <Section
           isColumn
           title="About"
-          ratio="none"
+          ratio="false"
           sectionMarginLeft="20"
           sectionMarginRight="20"
         >
