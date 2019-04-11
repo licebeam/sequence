@@ -6,10 +6,10 @@ import "../../base.css";
 const FlexContainer = styled.div`
   display: flex;
   overflow: auto;
-  flex-direction: ${props => (props.isColumn ? "column" : "row")}
+  flex-direction: ${props => (props.isColumn ? "column" : "row")};
   flex: ${props => props.ratio || "1"};
-  height: ${props => props.sectionHeight || "100%"};
-  width: ${props => props.sectionWidth || "100%"};
+  height: ${props => props.sectionHeight || "false"};
+  width: ${props => props.sectionWidth || "false"};
   padding: ${props =>
     props.sectionPadding ? props.sectionPadding + "px" : "0px"};
   margin-top: ${props =>
@@ -68,7 +68,9 @@ class ColumnSectionWithHeader extends Component {
             {title || false}
           </Header>
         ) : null}
-        <FlexContainer isColumn={isColumn}>{this.props.children}</FlexContainer>
+        <FlexContainer ratio={ratio} isColumn={isColumn}>
+          {this.props.children}
+        </FlexContainer>
       </FlexContainer>
     );
   }

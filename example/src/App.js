@@ -124,7 +124,7 @@ class App extends Component {
               </Section>
             </Section>
             <Section isColumn ratio={6}>
-              <Section isColumn>
+              <Section isColumn ratio="false">
                 {this.state.page === "about" ? <About /> : null}
                 {this.state.page === "installation" ? <Installation /> : null}
                 {this.state.page === "getting-started" ? (
