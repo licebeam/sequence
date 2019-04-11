@@ -1,11 +1,6 @@
 //Containers
 import Container from "./components/containers/Container.jsx";
 //Sections
-import ColumnSection from "./components/sections/ColumnSection.jsx";
-import ColumnSectionWithHeader from "./components/sections/ColumnSectionWithHeader.jsx";
-import RowSection from "./components/sections/RowSection.jsx";
-import RowSectionWithHeader from "./components/sections/RowSectionWithHeader.jsx";
-import FillSection from "./components/sections/FillSection.jsx";
 import Section from "./components/sections/Section.jsx";
 //Cards
 import Card from "./components/cards/Card.jsx";
@@ -30,11 +25,6 @@ export {
   //Containers
   Container,
   //Sections
-  ColumnSection,
-  ColumnSectionWithHeader,
-  RowSection,
-  RowSectionWithHeader,
-  FillSection,
   Section,
   //Cards
   Card,
