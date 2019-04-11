@@ -1,13 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { hopscotch } from "react-syntax-highlighter/dist/esm/styles/prism";
-import {
-  Text,
-  ColumnSectionWithHeader,
-  ColumnSection,
-  FillSection,
-  Section
-} from "sequence-ui";
+import { Text, Section } from "sequence-ui";
 
 class About extends Component {
   render() {
