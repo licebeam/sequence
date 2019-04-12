@@ -24,7 +24,7 @@ class About extends Component {
             {exampleCode}
           </SyntaxHighlighter>
           <Text textSize="1">
-            Once you've got your imported component you can pass props to it to
+            Once you've got your imported component, you can pass props to it to
             change its features such as its size or flex ratio.
           </Text>
           <Text isCenter>
