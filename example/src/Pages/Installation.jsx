@@ -5,35 +5,36 @@ import { Text, Section } from "sequence-ui";
 
 class About extends Component {
   render() {
-    const exampleCode = '<Text textSize="1" isBold> My Cool Text </Text>';
+    const exampleCode = "npm install -save sequence-ui";
+    const exampleCode2 = "yarn add sequence-ui";
     return (
       <Fragment>
         <Section
           isColumn
-          title="About"
+          title="Installation"
           ratio="false"
           sectionMarginLeft="20"
           sectionMarginRight="20"
         >
           <Section textColor="#000" sectionHeight="40px">
             <Text isCenter textSize=".6" isBold>
-              sequence-ui is a React component library built using
-              styled-components.
+              The current version on sequence-ui is not suitable for production
+              and should not be used.
             </Text>
           </Section>
           <Text textSize="1">
-            The goal of sequence-ui is to modularize components down to
-            primitives and basic elements allowing developers to quickly build
-            compounds.
-          </Text>
-          <Text textSize="1">
-            All of the components in sequence-ui are built utilizing flex-box.
-            This allows the compound components you build to remain mobile
-            friendly.
+            Installing sequence-ui is extremely simple. Navigate to your project
+            directory and in your terminal type either of the following commands
+            based on your preference.
           </Text>
           <Text isCenter>
-            <SyntaxHighlighter style={hopscotch} language="jsx">
+            <SyntaxHighlighter style={hopscotch} language="bash">
               {exampleCode}
+            </SyntaxHighlighter>
+          </Text>
+          <Text isCenter>
+            <SyntaxHighlighter style={hopscotch} language="bash">
+              {exampleCode2}
             </SyntaxHighlighter>
           </Text>
         </Section>
