@@ -22,33 +22,40 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Container bodyWidth="70%">
-          <Section sectionHeight="20vh">
-            <Section isColumn ratio={3}>
-              <Image imageURL={sequenceLogo} />
-              <Text isCenter textSize="1" isBold>
+        <Container bodyWidth="80%">
+          <Section sectionHeight="10vh">
+            <Section isColumn ratio={2} sectionMarginTop="10">
+              <Image imageURL={sequenceLogo} imageHeight="50" imageWidth="50" />
+              <Text isCenter textSize=".6" isBold>
                 sequence-ui
               </Text>
             </Section>
-            <Section isColumn ratio={6}>
-              <Section isColumn backgroundColor="#E54A26" textColor="#fafafa">
+            <Section isColumn ratio={8}>
+              <Section
+                sectionMarginTop="10"
+                sectionMarginLeft="20"
+                sectionMarginRight="20"
+                ratio="false"
+                isColumn
+                backgroundColor="#E54A26"
+                textColor="#fafafa"
+              >
                 <Text isCenter textSize=".8" isBold>
                   sequence-ui version 0.1.5 is currently a work in progress.
                 </Text>
               </Section>
-              <Section isColumn textColor="#fafafa" />
             </Section>
           </Section>
-          <Section sectionHeight="70vh">
-            <Section isColumn ratio={3}>
+          <Section sectionHeight="80vh">
+            <Section isColumn ratio={2}>
               <Section isColumn backgroundColor="#3A8687">
                 <Button onClick={() => this.changePage("about")} noGap>
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     About
                   </Text>
                 </Button>
                 <Button onClick={() => this.changePage("installation")} noGap>
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Installation
                   </Text>
                 </Button>
@@ -56,32 +63,32 @@ class App extends Component {
                   onClick={() => this.changePage("getting-started")}
                   noGap
                 >
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Getting Started
                   </Text>
                 </Button>
                 <Button onClick={() => this.changePage("containers")} noGap>
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Containers
                   </Text>
                 </Button>
                 <Button onClick={() => this.changePage("sections")} noGap>
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Sections
                   </Text>
                 </Button>
                 <Button onClick={() => this.changePage("text")} noGap>
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Text
                   </Text>
                 </Button>
                 <Button onClick={() => this.changePage("images")} noGap>
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Images
                   </Text>
                 </Button>
                 <Button onClick={() => this.changePage("tags")} noGap>
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Tags
                   </Text>
                 </Button>
@@ -90,7 +97,7 @@ class App extends Component {
                   isDisabled
                   noGap
                 >
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Buttons
                   </Text>
                 </Button>
@@ -99,7 +106,7 @@ class App extends Component {
                   isDisabled
                   noGap
                 >
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Menus
                   </Text>
                 </Button>
@@ -108,7 +115,7 @@ class App extends Component {
                   isDisabled
                   noGap
                 >
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Inputs
                   </Text>
                 </Button>
@@ -117,13 +124,13 @@ class App extends Component {
                   isDisabled
                   noGap
                 >
-                  <Text isCenter textSize="1" isBold>
+                  <Text isCenter textSize=".6" isBold>
                     Modals
                   </Text>
                 </Button>
               </Section>
             </Section>
-            <Section isColumn ratio={6}>
+            <Section isColumn ratio={8}>
               <Section isColumn ratio="false">
                 {this.state.page === "about" ? <About /> : null}
                 {this.state.page === "installation" ? <Installation /> : null}
