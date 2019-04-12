@@ -16,25 +16,40 @@ const TextContainer = styled.div`
   font-weight: ${props => (props.isBold ? "bold" : "normal")};
   background-color: ${props => props.backgroundColor || "inherit"};
   color: ${props => props.textColor || "inherit"};
-  margin: ${props =>
-    props.sectionMargin ? props.sectionMargin + "px" : "0px"};
+  padding: ${props => (props.textPadding ? props.textPadding + "px" : "0px")};
+  margin-top: ${props =>
+    props.textMarginTop ? props.textMarginTop + "px" : "0px"};
+  margin-bottom: ${props =>
+    props.textMarginBottom ? props.textMarginBottom + "px" : "0px"};
+  margin-left: ${props =>
+    props.textMarginLeft ? props.textMarginLeft + "px" : "0px"};
+  margin-right: ${props =>
+    props.textMarginRight ? props.textMarginRight + "px" : "0px"};
 `;
 
 class Text extends Component {
   render() {
     const {
       backgroundColor,
-      sectionMargin,
       ratio,
       textColor,
       textSize,
       isBold,
-      isCenter
+      isCenter,
+      textMarginTop,
+      textMarginBottom,
+      textMarginRight,
+      textMarginLeft,
+      textPadding
     } = this.props;
     return (
       <TextContainer
         backgroundColor={backgroundColor}
-        sectionMargin={sectionMargin}
+        textMarginTop={textMarginTop}
+        textMarginBottom={textMarginBottom}
+        textMarginRight={textMarginRight}
+        textMarginLeft={textMarginLeft}
+        textPadding={textPadding}
         ratio={ratio}
         textColor={textColor}
         textSize={textSize}
