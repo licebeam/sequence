@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { hopscotch } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { Text, Section, Button } from "sequence-ui";
+import { Text, Section } from "sequence-ui";
 
 class Containers extends Component {
   render() {
