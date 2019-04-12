@@ -26,7 +26,7 @@ class About extends Component {
             primitives and basic elements allowing developers to quickly build
             compounds.
           </Text>
-          <Text textSize="1">
+          <Text textSize="1" textMarginTop="20">
             All of the components in sequence-ui are built utilizing flex-box.
             This allows the compound components you build to remain mobile
             friendly.

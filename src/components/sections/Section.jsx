@@ -48,6 +48,7 @@ class ColumnSectionWithHeader extends Component {
       sectionMarginBottom,
       sectionMarginRight,
       sectionMarginLeft,
+      sectionPadding,
       isColumn
     } = this.props;
     return (
@@ -61,6 +62,7 @@ class ColumnSectionWithHeader extends Component {
         sectionMarginBottom={sectionMarginBottom}
         sectionMarginRight={sectionMarginRight}
         sectionMarginLeft={sectionMarginLeft}
+        sectionPadding={sectionPadding}
         isColumn={isColumn}
       >
         {title ? (
