@@ -5,7 +5,7 @@ class Construction extends Component {
   render() {
     return (
       <Section isColumn>
-        <Text isBold textColor="#ffb300">
+        <Text isBold isCenter textColor="#ffb300">
           This page is currently under construction.{" "}
         </Text>
       </Section>
