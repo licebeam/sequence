@@ -24,7 +24,7 @@ class App extends Component {
       <div className="App">
         <Container bodyWidth="80%">
           <Section sectionHeight="10vh">
-            <Section isColumn ratio={2} sectionMarginTop="10">
+            <Section isColumn ratio={2} sectionMarginTop="5">
               <Image imageURL={sequenceLogo} imageHeight="50" imageWidth="50" />
               <Text isCenter textSize=".6" isBold>
                 sequence-ui
@@ -32,7 +32,7 @@ class App extends Component {
             </Section>
             <Section isColumn ratio={8}>
               <Section
-                sectionMarginTop="10"
+                sectionMarginTop="5"
                 sectionMarginLeft="20"
                 sectionMarginRight="20"
                 ratio="false"
@@ -92,38 +92,22 @@ class App extends Component {
                     Tags
                   </Text>
                 </Button>
-                <Button
-                  onClick={() => this.changePage("buttons")}
-                  isDisabled
-                  noGap
-                >
+                <Button onClick={() => this.changePage("buttons")} noGap>
                   <Text isCenter textSize=".6" isBold>
                     Buttons
                   </Text>
                 </Button>
-                <Button
-                  onClick={() => this.changePage("menus")}
-                  isDisabled
-                  noGap
-                >
+                <Button onClick={() => this.changePage("menus")} noGap>
                   <Text isCenter textSize=".6" isBold>
                     Menus
                   </Text>
                 </Button>
-                <Button
-                  onClick={() => this.changePage("inputs")}
-                  isDisabled
-                  noGap
-                >
+                <Button onClick={() => this.changePage("inputs")} noGap>
                   <Text isCenter textSize=".6" isBold>
                     Inputs
                   </Text>
                 </Button>
-                <Button
-                  onClick={() => this.changePage("modals")}
-                  isDisabled
-                  noGap
-                >
+                <Button onClick={() => this.changePage("modals")} noGap>
                   <Text isCenter textSize=".6" isBold>
                     Modals
                   </Text>

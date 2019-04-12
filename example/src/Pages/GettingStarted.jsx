@@ -1,41 +1,38 @@
 import React, { Component, Fragment } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { hopscotch } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { Text, Section } from "sequence-ui";
+import { Text, Section, Button } from "sequence-ui";
 
 class About extends Component {
   render() {
-    const exampleCode = '<Text textSize="1" isBold> My Cool Text </Text>';
+    const exampleCode = 'import {Button} from "sequence-ui"';
+    const exampleCode2 = "<Button isError> My Cool Text </Button>";
     return (
       <Fragment>
         <Section
           isColumn
-          title="About"
+          title="Getting Started"
           ratio="false"
           sectionMarginLeft="20"
           sectionMarginRight="20"
         >
-          <Section textColor="#000" sectionHeight="40px">
-            <Text isCenter textSize=".6" isBold>
-              sequence-ui is a React component library built using
-              styled-components.
-            </Text>
-          </Section>
           <Text textSize="1">
-            The goal of sequence-ui is to modularize components down to
-            primitives and basic elements allowing developers to quickly build
-            compounds.
+            Getting started is as simple as importing the component you want to
+            use from sequence-ui.
           </Text>
+          <SyntaxHighlighter style={hopscotch} language="jsx">
+            {exampleCode}
+          </SyntaxHighlighter>
           <Text textSize="1">
-            All of the components in sequence-ui are built utilizing flex-box.
-            This allows the compound components you build to remain mobile
-            friendly.
+            Once you've got your imported component you can pass props to it to
+            change its features such as its size or flex ratio.
           </Text>
           <Text isCenter>
             <SyntaxHighlighter style={hopscotch} language="jsx">
-              {exampleCode}
+              {exampleCode2}
             </SyntaxHighlighter>
           </Text>
+          <Button isError>My Cool Button</Button>
         </Section>
       </Fragment>
     );
