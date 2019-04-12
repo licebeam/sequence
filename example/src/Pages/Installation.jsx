@@ -3,7 +3,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { hopscotch } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Text, Section } from "sequence-ui";
 
-class About extends Component {
+class Installation extends Component {
   render() {
     const exampleCode = "npm install -save sequence-ui";
     const exampleCode2 = "yarn add sequence-ui";
@@ -43,4 +43,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Installation;

@@ -3,7 +3,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { hopscotch } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Text, Section, Button } from "sequence-ui";
 
-class About extends Component {
+class GettingStarted extends Component {
   render() {
     const exampleCode = 'import {Button} from "sequence-ui"';
     const exampleCode2 = "<Button isError> My Cool Text </Button>";
@@ -20,9 +20,11 @@ class About extends Component {
             Getting started is as simple as importing the component you want to
             use from sequence-ui.
           </Text>
-          <SyntaxHighlighter style={hopscotch} language="jsx">
-            {exampleCode}
-          </SyntaxHighlighter>
+          <Text isCenter>
+            <SyntaxHighlighter style={hopscotch} language="jsx">
+              {exampleCode}
+            </SyntaxHighlighter>
+          </Text>
           <Text textSize="1">
             Once you've got your imported component, you can pass props to it to
             change its features such as its size or flex ratio.
@@ -32,6 +34,8 @@ class About extends Component {
               {exampleCode2}
             </SyntaxHighlighter>
           </Text>
+        </Section>
+        <Section sectionMarginLeft="20" sectionMarginRight="20">
           <Button isError>My Cool Button</Button>
         </Section>
       </Fragment>
@@ -39,4 +43,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default GettingStarted;

@@ -1,45 +1,55 @@
 import React, { Component, Fragment } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { hopscotch } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { Text, Section } from "sequence-ui";
+import { Text, Section, Button } from "sequence-ui";
 
-class About extends Component {
+class Containers extends Component {
   render() {
-    const exampleCode = '<Text textSize="1" isBold> My Cool Text </Text>';
+    const exampleCode = 'import {Container} from "sequence-ui"';
+    const exampleCode2 = "<Container> All of my other components! </Container>";
     return (
       <Fragment>
         <Section
           isColumn
-          title="About"
+          title="Containers"
           ratio="false"
           sectionMarginLeft="20"
           sectionMarginRight="20"
         >
-          <Section textColor="#000" sectionHeight="40px">
-            <Text isCenter textSize=".6" isBold>
-              sequence-ui is a React component library built using
-              styled-components.
-            </Text>
-          </Section>
           <Text textSize="1">
-            The goal of sequence-ui is to modularize components down to
-            primitives and basic elements allowing developers to quickly build
-            compounds.
-          </Text>
-          <Text textSize="1">
-            All of the components in sequence-ui are built utilizing flex-box.
-            This allows the compound components you build to remain mobile
-            friendly.
+            The container is the first building primitive of sequence-ui. The
+            Container component serves as the wrapper for your webpage or
+            application.
           </Text>
           <Text isCenter>
             <SyntaxHighlighter style={hopscotch} language="jsx">
               {exampleCode}
             </SyntaxHighlighter>
           </Text>
+          <Text textSize="1">
+            As with most other components in sequence-ui, the Container
+            component will render it's children.
+          </Text>
+          <Text isCenter>
+            <SyntaxHighlighter style={hopscotch} language="jsx">
+              {exampleCode2}
+            </SyntaxHighlighter>
+          </Text>
+        </Section>
+        <Section
+          isColumn
+          sectionMarginLeft="20"
+          sectionMarginRight="20"
+          title="Props"
+        >
+          <ul>
+            <li>bodyWidth -> String : css property IE: '80%'</li>
+            <li>backgroundColor -> String</li>
+          </ul>
         </Section>
       </Fragment>
     );
   }
 }
 
-export default About;
+export default Containers;
