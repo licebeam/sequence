@@ -41,7 +41,7 @@ class App extends Component {
                 textColor="#fafafa"
               >
                 <Text isCenter textSize=".8" isBold>
-                  sequence-ui version 0.1.5 is currently a work in progress.
+                  sequence-ui version 0.1.6 is currently a work in progress.
                 </Text>
               </Section>
             </Section>
